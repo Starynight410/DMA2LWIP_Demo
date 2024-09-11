@@ -1,0 +1,381 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Sep  9 09:18:26 2024
+# Process ID: 20548
+# Current directory: E:/VideoDMA_System/VideoDMA_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent49604 E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.xpr
+# Log file: E:/VideoDMA_System/VideoDMA_Project/vivado.log
+# Journal file: E:/VideoDMA_System/VideoDMA_Project\vivado.jou
+# Running On: huiyi, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 17023 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_ports FDMA_S_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:2.0 axis_data_fifo_0
+endgroup
+set_property -dict [list CONFIG.FIFO_DEPTH {2048} CONFIG.IS_ACLK_ASYNC {1} CONFIG.ACLKEN_CONV_MODE {2} CONFIG.HAS_WR_DATA_COUNT {1} CONFIG.HAS_RD_DATA_COUNT {1} CONFIG.HAS_AFULL {0} CONFIG.FIFO_MEMORY_TYPE {auto}] [get_bd_cells axis_data_fifo_0]
+set_property location {3 731 566} [get_bd_cells axis_data_fifo_0]
+set_property location {1 556 597} [get_bd_cells axis_data_fifo_0]
+set_property -dict [list CONFIG.FIFO_DEPTH {1024} CONFIG.FIFO_MODE {1} CONFIG.ACLKEN_CONV_MODE {0} CONFIG.SYNCHRONIZATION_STAGES {2}] [get_bd_cells axis_data_fifo_0]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axis_data_fifo_0/S_AXIS]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axis_data_fifo_0/s_axis_aresetn]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axis_data_fifo_0/s_axis_aclk]
+endgroup
+connect_bd_net [get_bd_pins axis_data_fifo_0/m_axis_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+regenerate_bd_layout
+validate_bd_design
+set_property -dict [list CONFIG.HAS_TLAST {1} CONFIG.HAS_TKEEP {1} CONFIG.TDATA_NUM_BYTES {2}] [get_bd_intf_ports S_AXIS_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property -dict [list CONFIG.c_include_sg {0} CONFIG.c_sg_length_width {23} CONFIG.c_sg_include_stscntrl_strm {0} CONFIG.c_include_mm2s {0}] [get_bd_cells axi_dma_0]
+set_property location {2 468 153} [get_bd_cells axi_dma_0]
+connect_bd_intf_net [get_bd_intf_pins axis_data_fifo_0/M_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXI_S2MM] -boundary_type upper [get_bd_intf_pins axi_mem_intercon/S00_AXI]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+delete_bd_objs [get_bd_nets axi_uart16550_0_ip2intc_irpt]
+set_property location {4 1499 615} [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_pins axi_uart16550_0/ip2intc_irpt] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_pins xlconcat_0/In0] [get_bd_pins axi_dma_0/s2mm_introut]
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins processing_system7_0/IRQ_F2P]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (200 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_dma_0/m_axi_s2mm_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (200 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (200 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+endgroup
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.C_NUM_MONITOR_SLOTS {3}] [get_bd_cells system_ila_0]
+endgroup
+undo
+regenerate_bd_layout
+set_property name rest_0 [get_bd_ports s_axis_aresetn_0]
+set_property name restn_0 [get_bd_ports rest_0]
+set_property name rstn_i [get_bd_ports restn_0]
+set_property name sysclk_0 [get_bd_ports s_axis_aclk_0]
+delete_bd_objs [get_bd_nets s_axis_aresetn_0_1] [get_bd_ports rstn_i]
+delete_bd_objs [get_bd_nets s_axis_aclk_0_1] [get_bd_ports sysclk_0]
+undo
+undo
+set_property name sysclk_i [get_bd_ports sysclk_0]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.C_MON_TYPE {MIX}] [get_bd_cells system_ila_0]
+endgroup
+connect_bd_net [get_bd_pins system_ila_0/probe0] [get_bd_pins axi_dma_0/s2mm_introut]
+regenerate_bd_layout
+assign_bd_address
+validate_bd_design
+make_wrapper -files [get_files E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd] -top
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (200 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (200 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+endgroup
+set_property name gpio_rtl [get_bd_intf_ports gpio_rtl_0]
+regenerate_bd_layout
+validate_bd_design
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins processing_system7_0/FCLK_CLK0]
+startgroup
+make_bd_pins_external  [get_bd_pins processing_system7_0/FCLK_CLK0]
+endgroup
+set_property name FCLK_CLK [get_bd_ports FCLK_CLK0_0]
+undo
+undo
+undo
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {200} CONFIG.PCW_EN_CLK1_PORT {1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins processing_system7_0/FCLK_CLK1]
+endgroup
+set_property name FCLK_CLK1 [get_bd_ports FCLK_CLK1_0]
+regenerate_bd_layout
+validate_bd_design
+make_wrapper -files [get_files E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd] -top
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1}] [get_bd_cells axi_gpio_0]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+make_wrapper -files [get_files E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd] -top
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_cells axi_gpio_0]
+delete_bd_objs [get_bd_intf_ports gpio_rtl]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {2}] [get_bd_cells ps7_0_axi_periph]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+make_wrapper -files [get_files E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd] -top
+set_property -dict [list CONFIG.C_PROBE6_WIDTH {2} CONFIG.C_PROBE2_WIDTH {2} CONFIG.C_PROBE1_WIDTH {16} CONFIG.C_NUM_OF_PROBES {7}] [get_ips ila_0]
+reset_run ila_0_synth_1
+reset_run design_1_processing_system7_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+close_design
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+close_bd_design [get_bd_designs design_1]
+write_hw_platform -fixed -include_bit -force -file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Top.xsa
+close_project
+open_project E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.xpr
+update_compile_order -fileset sources_1
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {S_AXIS_tdata} {S_AXIS_tkeep} {S_AXIS_tlast} {S_AXIS_tready} {S_AXIS_tvalid} {state} }
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes trans_start_i -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes S_AXIS_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {design_1_wrapper_i/design_1_i/system_ila_0/inst/probe0_1} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_ar_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_aw_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_b_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_r_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_w_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_ar_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_aw_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_b_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_r_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_w_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arprot} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awprot} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_bready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_bresp} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_bvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rdata} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wdata} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wstrb} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_ar_cnt} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_araddr} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arcache} {AR_Channel_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arlen} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arsize} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_aw_cnt} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awaddr} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awcache} {AW_Channel_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awlen} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awsize} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_b_cnt} {B_Channel_(i1:s0)_(S01_AXI_1)} {Interface_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_r_cnt} {R_Channel_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rlast} {W_Channel_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wlast} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_araddr} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arcache} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arprot} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arsize} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awaddr} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awcache} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awprot} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awsize} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_bready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_bresp} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_bvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rdata} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rlast} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wdata} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wlast} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wstrb} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_ar_cnt} {AR_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arlen} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_aw_cnt} {AW_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awlen} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_b_cnt} {B_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)} {Interface_(i1:s1)_(axi_mem_intercon_M00_AXI)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_r_cnt} {R_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)} {W_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)} }
+set_property NAME.CUSTOM axi_dma_0_s2mm_introut [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/probe0_1] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : ARPROT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arprot] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : ARREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arready] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : ARVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arvalid] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : AWPROT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awprot] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : AWREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awready] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : AWVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awvalid] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : BREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_bready] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : BRESP} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_bresp] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : BVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_bvalid] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : RDATA} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rdata] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : RREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rready] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : RVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rvalid] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : WDATA} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wdata] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : WREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wready] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : WSTRB} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wstrb] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : WVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wvalid] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AR_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_ar_cnt] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : ARADDR} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_araddr] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : ARCACHE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arcache] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AR Channel  Events} [get_hw_probes AR_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : ARLEN} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arlen] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : ARSIZE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arsize] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AW_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_aw_cnt] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AWADDR} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awaddr] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AWCACHE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awcache] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AW Channel  Events} [get_hw_probes AW_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AWLEN} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awlen] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AWSIZE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awsize] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : B_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_b_cnt] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : B Channel  Events} [get_hw_probes B_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : Interface  Events} [get_hw_probes Interface_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : R_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_r_cnt] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : R Channel  Events} [get_hw_probes R_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : RLAST} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rlast] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : W Channel  Events} [get_hw_probes W_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : WLAST} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wlast] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : ARADDR} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_araddr] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : ARCACHE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arcache] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : ARPROT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arprot] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : ARREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arready] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : ARSIZE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arsize] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : ARVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arvalid] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : AWADDR} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awaddr] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : AWCACHE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awcache] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : AWPROT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awprot] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : AWREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awready] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : AWSIZE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awsize] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : AWVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awvalid] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : BREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_bready] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : BRESP} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_bresp] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : BVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_bvalid] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : RDATA} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rdata] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : RLAST} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rlast] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : RREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rready] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : RVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rvalid] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : WDATA} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wdata] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : WLAST} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wlast] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : WREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wready] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : WSTRB} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wstrb] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : WVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wvalid] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : AR_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_ar_cnt] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : AR Channel  Events} [get_hw_probes AR_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : ARLEN} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arlen] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : AW_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_aw_cnt] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : AW Channel  Events} [get_hw_probes AW_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : AWLEN} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awlen] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : B_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_b_cnt] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : B Channel  Events} [get_hw_probes B_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : Interface  Events} [get_hw_probes Interface_(i1:s1)_(axi_mem_intercon_M00_AXI)] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : R_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_r_cnt] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : R Channel  Events} [get_hw_probes R_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : W Channel  Events} [get_hw_probes W_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)] 
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_ar_cnt} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_araddr} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arcache} {AR_Channel_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arlen} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arsize} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_aw_cnt} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awaddr} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awcache} {AW_Channel_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awlen} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awsize} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_b_cnt} {B_Channel_(i1:s0)_(S01_AXI_1)} {Interface_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_r_cnt} {R_Channel_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rlast} {W_Channel_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wlast} }
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AR_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_ar_cnt] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : ARADDR} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_araddr] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : ARCACHE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arcache] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AR Channel  Events} [get_hw_probes AR_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : ARLEN} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arlen] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : ARSIZE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arsize] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AW_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_aw_cnt] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AWADDR} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awaddr] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AWCACHE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awcache] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AW Channel  Events} [get_hw_probes AW_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AWLEN} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awlen] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AWSIZE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awsize] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : B_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_b_cnt] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : B Channel  Events} [get_hw_probes B_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : Interface  Events} [get_hw_probes Interface_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : R_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_r_cnt] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : R Channel  Events} [get_hw_probes R_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : RLAST} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rlast] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : W Channel  Events} [get_hw_probes W_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : WLAST} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wlast] 
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {3} CONFIG.C_NUM_MONITOR_SLOTS {3}] [get_bd_cells system_ila_0]
+endgroup
+validate_bd_design
+connect_bd_net [get_bd_pins system_ila_0/probe1] [get_bd_pins axis_data_fifo_0/axis_wr_data_count]
+connect_bd_net [get_bd_pins system_ila_0/probe2] [get_bd_pins axis_data_fifo_0/axis_rd_data_count]
+startgroup
+endgroup
+startgroup
+endgroup
+regenerate_bd_layout
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.C_NUM_MONITOR_SLOTS {2}] [get_bd_cells system_ila_0]
+endgroup
+regenerate_bd_layout
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins gmii_to_rgmii_0/clkin]
+connect_bd_net [get_bd_pins gmii_to_rgmii_0/clkin] [get_bd_pins processing_system7_0/FCLK_CLK1]
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100}] [get_bd_cells processing_system7_0]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {50}] [get_bd_cells processing_system7_0]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+make_wrapper -files [get_files E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd] -top
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK1]
+connect_bd_net [get_bd_ports FCLK_CLK1] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK1] [get_bd_pins gmii_to_rgmii_0/clkin]
+regenerate_bd_layout
+validate_bd_design
+set_property -dict [list CONFIG.FREQ_HZ {50000000}] [get_bd_ports FCLK_CLK1]
+validate_bd_design
+save_bd_design
+reset_run synth_1
+reset_run design_1_rst_ps7_0_50M_2_synth_1
+reset_run design_1_processing_system7_0_0_synth_1
+reset_run design_1_axi_uart16550_0_0_synth_1
+reset_run design_1_system_ila_0_0_synth_1
+reset_run design_1_xbar_0_synth_1
+reset_run design_1_axi_dma_0_0_synth_1
+reset_run design_1_axis_data_fifo_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+regenerate_bd_layout
+write_hw_platform -fixed -include_bit -force -file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Top.xsa
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+save_wave_config {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

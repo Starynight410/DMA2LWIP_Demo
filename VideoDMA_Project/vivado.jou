@@ -1,0 +1,117 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Sep  9 15:35:11 2024
+# Process ID: 55960
+# Current directory: E:/VideoDMA_System/VideoDMA_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15392 E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.xpr
+# Log file: E:/VideoDMA_System/VideoDMA_Project/vivado.log
+# Journal file: E:/VideoDMA_System/VideoDMA_Project\vivado.jou
+# Running On: huiyi, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 17023 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.xpr
+update_compile_order -fileset sources_1
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets S_AXIS_0_1]
+delete_bd_objs [get_bd_intf_ports S_AXIS_0]
+delete_bd_objs [get_bd_nets s_axis_aresetn_0_1] [get_bd_ports rstn_i]
+delete_bd_objs [get_bd_nets s_axis_aclk_0_1] [get_bd_ports sysclk_i]
+delete_bd_objs [get_bd_nets axis_data_fifo_0_axis_wr_data_count] [get_bd_nets axis_data_fifo_0_axis_rd_data_count] [get_bd_intf_nets axis_data_fifo_0_M_AXIS] [get_bd_cells axis_data_fifo_0]
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_cells axi_dma_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:uiFDMA:3.0 uiFDMA_0
+endgroup
+set_property location {2 419 850} [get_bd_cells uiFDMA_0]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins uiFDMA_0/FDMA_S]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_protocol_converter:2.1 axi_protocol_convert_0
+endgroup
+set_property location {3 818 1062} [get_bd_cells axi_protocol_convert_0]
+connect_bd_intf_net [get_bd_intf_pins axi_protocol_convert_0/S_AXI] [get_bd_intf_pins uiFDMA_0/M_AXI]
+delete_bd_objs [get_bd_intf_nets axi_mem_intercon_M00_AXI]
+validate_bd_design
+validate_bd_design
+set_property location {3 1178 344} [get_bd_cells axi_protocol_convert_0]
+connect_bd_intf_net [get_bd_intf_pins axi_protocol_convert_0/M_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+connect_bd_intf_net [get_bd_intf_pins system_ila_0/SLOT_1_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+delete_bd_objs [get_bd_nets axi_dma_0_s2mm_introut] [get_bd_nets axi_uart16550_0_ip2intc_irpt] [get_bd_nets xlconcat_0_dout] [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_pins axi_uart16550_0/ip2intc_irpt] [get_bd_pins processing_system7_0/IRQ_F2P]
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100}] [get_bd_cells processing_system7_0]
+endgroup
+set_property name FCLK_CLK0 [get_bd_ports FCLK_CLK1]
+delete_bd_objs [get_bd_intf_nets S01_AXI_1] [get_bd_cells axi_mem_intercon]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_protocol_convert_0/aclk]
+endgroup
+startgroup
+set_property -dict [list CONFIG.NUM_MI {1}] [get_bd_cells ps7_0_axi_periph]
+endgroup
+regenerate_bd_layout
+connect_bd_intf_net [get_bd_intf_pins system_ila_0/SLOT_0_AXI] [get_bd_intf_pins uiFDMA_0/M_AXI]
+startgroup
+set_property -dict [list CONFIG.C_MON_TYPE {INTERFACE}] [get_bd_cells system_ila_0]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+assign_bd_address
+validate_bd_design
+set_property -dict [list CONFIG.FREQ_HZ {100000000}] [get_bd_ports FCLK_CLK0]
+regenerate_bd_layout
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.M_AXI_DATA_WIDTH {32}] [get_bd_cells uiFDMA_0]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+validate_bd_design
+disconnect_bd_intf_net [get_bd_intf_net uiFDMA_0_M_AXI] [get_bd_intf_pins system_ila_0/SLOT_0_AXI]
+validate_bd_design
+undo
+disconnect_bd_intf_net [get_bd_intf_net axi_protocol_convert_0_M_AXI] [get_bd_intf_pins system_ila_0/SLOT_1_AXI]
+startgroup
+set_property -dict [list CONFIG.C_NUM_MONITOR_SLOTS {1}] [get_bd_cells system_ila_0]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+make_wrapper -files [get_files E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd] -top
+set_property -dict [list CONFIG.C_PROBE6_WIDTH {1} CONFIG.C_PROBE2_WIDTH {35} CONFIG.C_PROBE1_WIDTH {19} CONFIG.C_NUM_OF_PROBES {3}] [get_ips ila_0]
+reset_run synth_1
+reset_run ila_0_synth_1
+reset_run design_1_processing_system7_0_0_synth_1
+reset_run design_1_system_ila_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+write_hw_platform -fixed -include_bit -force -file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Top.xsa
+close_design
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {fdma_rbusy} {fdma_rdata} {fdma_rvalid} {fdma_wareq} {fdma_wbusy} {fdma_wdata} {fdma_wdata_1} {fdma_wvalid} {T_S} {test_error} }
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes trans_start_i -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wdata} }
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : WDATA} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wdata] 
+save_wave_config {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager

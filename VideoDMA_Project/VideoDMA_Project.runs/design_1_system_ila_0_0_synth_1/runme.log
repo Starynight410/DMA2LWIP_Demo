@@ -1,0 +1,950 @@
+
+*** Running vivado
+    with args -log design_1_system_ila_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_system_ila_0_0.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_system_ila_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:user:FDMA:1.0' found within IP repository 'e:/VideoDMA_System'.
+File in use: e:/VideoDMA_System/uisrc/03_ip/uifdma/FDMA.xml
+File ignored: e:/VideoDMA_System/uisrc/03_ip/uifdmadbuf/FDMA.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:user:FDMA_rtl:1.0' found within IP repository 'e:/VideoDMA_System'.
+File in use: e:/VideoDMA_System/uisrc/03_ip/uifdma/FDMA_rtl.xml
+File ignored: e:/VideoDMA_System/uisrc/03_ip/uifdmadbuf/FDMA_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/VideoDMA_System'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'e:/VideoDMA_System' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_system_ila_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top design_1_system_ila_0_0 -part xc7z020clg484-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 33216
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1603.809 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/synth/design_1_system_ila_0_0.v:216]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/synth/design_1_system_ila_0_0.v:341]
+INFO: [Synth 8-6157] synthesizing module 'bd_f60c' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_f60c_g_inst_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/synth/bd_f60c_g_inst_0.v:116]
+INFO: [Synth 8-6157] synthesizing module 'bd_f60c_g_inst_0_gigantic_mux' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:63]
+WARNING: [Synth 8-3848] Net probe_out0 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:1985]
+WARNING: [Synth 8-3848] Net probe_out1 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:1986]
+WARNING: [Synth 8-3848] Net probe_out2 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:1987]
+WARNING: [Synth 8-3848] Net probe_out3 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:1988]
+WARNING: [Synth 8-3848] Net probe_out4 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:1989]
+WARNING: [Synth 8-3848] Net probe_out5 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:1990]
+WARNING: [Synth 8-3848] Net probe_out6 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:1991]
+WARNING: [Synth 8-3848] Net probe_out7 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:1992]
+WARNING: [Synth 8-3848] Net probe_out8 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:1993]
+WARNING: [Synth 8-3848] Net probe_out9 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:1994]
+WARNING: [Synth 8-3848] Net probe_out10 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:1995]
+WARNING: [Synth 8-3848] Net probe_out11 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:1996]
+WARNING: [Synth 8-3848] Net probe_out12 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:1997]
+WARNING: [Synth 8-3848] Net probe_out13 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:1998]
+WARNING: [Synth 8-3848] Net probe_out14 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:1999]
+WARNING: [Synth 8-3848] Net probe_out15 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2000]
+WARNING: [Synth 8-3848] Net probe_out16 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2001]
+WARNING: [Synth 8-3848] Net probe_out17 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2002]
+WARNING: [Synth 8-3848] Net probe_out18 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2003]
+WARNING: [Synth 8-3848] Net probe_out19 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2004]
+WARNING: [Synth 8-3848] Net probe_out20 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2005]
+WARNING: [Synth 8-3848] Net probe_out21 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2006]
+WARNING: [Synth 8-3848] Net probe_out22 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2007]
+WARNING: [Synth 8-3848] Net probe_out23 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2008]
+WARNING: [Synth 8-3848] Net probe_out24 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2009]
+WARNING: [Synth 8-3848] Net probe_out25 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2010]
+WARNING: [Synth 8-3848] Net probe_out26 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2011]
+WARNING: [Synth 8-3848] Net probe_out27 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2012]
+WARNING: [Synth 8-3848] Net probe_out28 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2013]
+WARNING: [Synth 8-3848] Net probe_out29 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2014]
+WARNING: [Synth 8-3848] Net probe_out30 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2015]
+WARNING: [Synth 8-3848] Net probe_out31 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2016]
+WARNING: [Synth 8-3848] Net probe_out32 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2017]
+WARNING: [Synth 8-3848] Net probe_out33 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2018]
+WARNING: [Synth 8-3848] Net probe_out34 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2019]
+WARNING: [Synth 8-3848] Net probe_out35 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2020]
+WARNING: [Synth 8-3848] Net probe_out36 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2021]
+WARNING: [Synth 8-3848] Net probe_out37 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2022]
+WARNING: [Synth 8-3848] Net probe_out38 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2023]
+WARNING: [Synth 8-3848] Net probe_out39 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2024]
+WARNING: [Synth 8-3848] Net probe_out40 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2025]
+WARNING: [Synth 8-3848] Net probe_out41 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2026]
+WARNING: [Synth 8-3848] Net probe_out42 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2027]
+WARNING: [Synth 8-3848] Net probe_out43 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2028]
+WARNING: [Synth 8-3848] Net probe_out44 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2029]
+WARNING: [Synth 8-3848] Net probe_out45 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2030]
+WARNING: [Synth 8-3848] Net probe_out46 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2031]
+WARNING: [Synth 8-3848] Net probe_out47 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2032]
+WARNING: [Synth 8-3848] Net probe_out48 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2033]
+WARNING: [Synth 8-3848] Net probe_out49 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2034]
+WARNING: [Synth 8-3848] Net probe_out50 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2035]
+WARNING: [Synth 8-3848] Net probe_out51 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2036]
+WARNING: [Synth 8-3848] Net probe_out52 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2037]
+WARNING: [Synth 8-3848] Net probe_out53 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2038]
+WARNING: [Synth 8-3848] Net probe_out54 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2039]
+WARNING: [Synth 8-3848] Net probe_out55 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2040]
+WARNING: [Synth 8-3848] Net probe_out56 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2041]
+WARNING: [Synth 8-3848] Net probe_out57 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2042]
+WARNING: [Synth 8-3848] Net probe_out58 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2043]
+WARNING: [Synth 8-3848] Net probe_out59 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2044]
+WARNING: [Synth 8-3848] Net probe_out60 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2045]
+WARNING: [Synth 8-3848] Net probe_out61 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2046]
+WARNING: [Synth 8-3848] Net probe_out62 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2047]
+WARNING: [Synth 8-3848] Net probe_out63 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2048]
+WARNING: [Synth 8-3848] Net probe_out64 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2049]
+WARNING: [Synth 8-3848] Net probe_out65 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2050]
+WARNING: [Synth 8-3848] Net probe_out66 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2051]
+WARNING: [Synth 8-3848] Net probe_out67 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2052]
+WARNING: [Synth 8-3848] Net probe_out68 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2053]
+WARNING: [Synth 8-3848] Net probe_out69 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2054]
+WARNING: [Synth 8-3848] Net probe_out70 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2055]
+WARNING: [Synth 8-3848] Net probe_out71 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2056]
+WARNING: [Synth 8-3848] Net probe_out72 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2057]
+WARNING: [Synth 8-3848] Net probe_out73 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2058]
+WARNING: [Synth 8-3848] Net probe_out74 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2059]
+WARNING: [Synth 8-3848] Net probe_out75 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2060]
+WARNING: [Synth 8-3848] Net probe_out76 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2061]
+WARNING: [Synth 8-3848] Net probe_out77 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2062]
+WARNING: [Synth 8-3848] Net probe_out78 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2063]
+WARNING: [Synth 8-3848] Net probe_out79 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2064]
+WARNING: [Synth 8-3848] Net probe_out80 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2065]
+WARNING: [Synth 8-3848] Net probe_out81 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2066]
+WARNING: [Synth 8-3848] Net probe_out82 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2067]
+WARNING: [Synth 8-3848] Net probe_out83 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2068]
+WARNING: [Synth 8-3848] Net probe_out84 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2069]
+WARNING: [Synth 8-3848] Net probe_out85 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2070]
+WARNING: [Synth 8-3848] Net probe_out86 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2071]
+WARNING: [Synth 8-3848] Net probe_out87 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2072]
+WARNING: [Synth 8-3848] Net probe_out88 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2073]
+WARNING: [Synth 8-3848] Net probe_out89 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2074]
+WARNING: [Synth 8-3848] Net probe_out90 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2075]
+WARNING: [Synth 8-3848] Net probe_out91 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2076]
+WARNING: [Synth 8-3848] Net probe_out92 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2077]
+WARNING: [Synth 8-3848] Net probe_out93 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2078]
+WARNING: [Synth 8-3848] Net probe_out94 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2079]
+WARNING: [Synth 8-3848] Net probe_out95 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2080]
+WARNING: [Synth 8-3848] Net probe_out96 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2081]
+WARNING: [Synth 8-3848] Net probe_out97 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2082]
+WARNING: [Synth 8-3848] Net probe_out98 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2083]
+WARNING: [Synth 8-3848] Net probe_out99 in module/entity bd_f60c_g_inst_0_gigantic_mux does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:2084]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'bd_f60c_g_inst_0_gigantic_mux' (2#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f60c_g_inst_0' (3#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/synth/bd_f60c_g_inst_0.v:116]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:296]
+INFO: [Synth 8-6157] synthesizing module 'bd_f60c_ila_lib_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:84]
+INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1524]
+INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (11#1) [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1524]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1487]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (12#1) [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1487]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:106149]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (22#1) [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:106149]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:105999]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (24#1) [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:105999]
+INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:106088]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (26#1) [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:106088]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:27837]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (31#1) [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:27837]
+WARNING: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3275]
+WARNING: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3275]
+WARNING: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3275]
+WARNING: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3275]
+WARNING: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3275]
+WARNING: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3275]
+WARNING: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_12_ila' has 1033 connections declared, but only 1027 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3275]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f60c_ila_lib_0' (49#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:84]
+INFO: [Synth 8-6157] synthesizing module 'bd_f60c_slot_0_ar_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_5/synth/bd_f60c_slot_0_ar_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (50#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f60c_slot_0_ar_0' (51#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_5/synth/bd_f60c_slot_0_ar_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'bd_f60c_slot_0_aw_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_2/synth/bd_f60c_slot_0_aw_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f60c_slot_0_aw_0' (52#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_2/synth/bd_f60c_slot_0_aw_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'bd_f60c_slot_0_b_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_4/synth/bd_f60c_slot_0_b_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f60c_slot_0_b_0' (53#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_4/synth/bd_f60c_slot_0_b_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'bd_f60c_slot_0_r_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_6/synth/bd_f60c_slot_0_r_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' (53#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f60c_slot_0_r_0' (54#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_6/synth/bd_f60c_slot_0_r_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'bd_f60c_slot_0_w_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_3/synth/bd_f60c_slot_0_w_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f60c_slot_0_w_0' (55#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_3/synth/bd_f60c_slot_0_w_0.v:60]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'g_inst'. This will prevent further optimization [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:215]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_lib'. This will prevent further optimization [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:296]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'slot_0_aw'. This will prevent further optimization [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:336]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'slot_0_w'. This will prevent further optimization [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:349]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'slot_0_b'. This will prevent further optimization [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:340]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'slot_0_ar'. This will prevent further optimization [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:332]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'slot_0_r'. This will prevent further optimization [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:344]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f60c' (56#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_0' (57#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/synth/design_1_system_ila_0_0.v:216]
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:46 ; elapsed = 00:01:00 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:01:01 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:47 ; elapsed = 00:01:01 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.197 . Memory (MB): peak = 2054.574 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 385 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'inst/ila_lib/inst'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'inst/ila_lib/inst'
+Parsing XDC File [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_system_ila_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_system_ila_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_system_ila_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_system_ila_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_system_ila_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2054.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 266 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 228 instances
+  CFGLUT5 => SRLC32E: 38 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.187 . Memory (MB): peak = 2054.574 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:55 ; elapsed = 00:01:11 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:55 ; elapsed = 00:01:11 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ila_lib/inst. (constraint file  E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_system_ila_0_0_synth_1/dont_touch.xdc, line 32).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ila_lib. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/g_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/slot_0_aw. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/slot_0_w. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/slot_0_b. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/slot_0_ar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/slot_0_r. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:11 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized4'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized5'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized6'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized7'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized8'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized9'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized10'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized11'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized12'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized13'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized14'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized15'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized16'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized17'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized18'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized19'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized20'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized21'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized22'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized23'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized24'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized25'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized26'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized27'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized28'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized29'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized30'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized31'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized32'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized33'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized34'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_0_generic_memrd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized8'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized9'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized10'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized11'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized12'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized13'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized14'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized15'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized16'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized17'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized18'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized19'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized20'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized21'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized22'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized23'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized24'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized25'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized26'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized27'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized28'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized29'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized30'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized31'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized32'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized33'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized34'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              RESET_ADDR |                          0000001 |                          0000001
+            REQUEST_READ |                          0000010 |                          0000010
+           WAIT_READ_ACK |                          0000100 |                          0000100
+             OUTPUT_DATA |                          0001000 |                          0001000
+                    IDLE |                          0010000 |                          0010000
+         INCREMENT_BLOCK |                          0100000 |                          0100000
+       INCREMENT_ADDRESS |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'ltlib_v1_0_0_generic_memrd'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:58 ; elapsed = 00:01:14 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:31 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:37 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:37 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:39 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin dummy_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[36] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[35] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[34] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[33] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[32] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:trig_in to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:trig_out_ack to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:01:42 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:01:42 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:25 ; elapsed = 00:01:42 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:25 ; elapsed = 00:01:42 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:26 ; elapsed = 00:01:42 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:26 ; elapsed = 00:01:42 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   104|
+|2     |CFGLUT5  |   266|
+|3     |LUT1     |    64|
+|4     |LUT2     |    82|
+|5     |LUT3     |   160|
+|6     |LUT4     |   362|
+|7     |LUT5     |   118|
+|8     |LUT6     |  1135|
+|9     |MUXF7    |    97|
+|10    |MUXF8    |    32|
+|11    |RAMB18E1 |     1|
+|12    |RAMB36E1 |    23|
+|13    |SRL16E   |   214|
+|14    |SRLC16E  |     2|
+|15    |SRLC32E  |    17|
+|16    |FDRE     |  3455|
+|17    |FDSE     |    10|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:01:42 . Memory (MB): peak = 2054.574 ; gain = 450.766
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1685 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:01:37 . Memory (MB): peak = 2054.574 ; gain = 450.766
+Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:01:43 . Memory (MB): peak = 2054.574 ; gain = 450.766
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.097 . Memory (MB): peak = 2054.574 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 523 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2054.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 266 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 228 instances
+  CFGLUT5 => SRLC32E: 38 instances
+
+Synth Design complete, checksum: 5530706a
+INFO: [Common 17-83] Releasing license: Synthesis
+179 Infos, 213 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:51 . Memory (MB): peak = 2054.574 ; gain = 450.766
+INFO: [Common 17-1381] The checkpoint 'E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_system_ila_0_0_synth_1/design_1_system_ila_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_system_ila_0_0, cache-ID = a00d418296fe325c
+INFO: [Coretcl 2-1174] Renamed 340 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_system_ila_0_0_synth_1/design_1_system_ila_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_system_ila_0_0_utilization_synth.rpt -pb design_1_system_ila_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  9 15:48:27 2024...

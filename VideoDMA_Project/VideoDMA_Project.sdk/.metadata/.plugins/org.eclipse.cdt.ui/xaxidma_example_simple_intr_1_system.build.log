@@ -1,0 +1,8 @@
+17:10:07 **** Clean-only build of configuration Debug for project xaxidma_example_simple_intr_1_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+
+17:10:07 Build Finished (took 94ms)
+

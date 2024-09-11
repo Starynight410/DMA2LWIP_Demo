@@ -1,0 +1,726 @@
+
+*** Running vivado
+    with args -log VideoDMA_Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source VideoDMA_Top.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source VideoDMA_Top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:user:FDMA:1.0' found within IP repository 'e:/VideoDMA_System'.
+File in use: e:/VideoDMA_System/uisrc/03_ip/uifdma/FDMA.xml
+File ignored: e:/VideoDMA_System/uisrc/03_ip/uifdmadbuf/FDMA.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:user:FDMA_rtl:1.0' found within IP repository 'e:/VideoDMA_System'.
+File in use: e:/VideoDMA_System/uisrc/03_ip/uifdma/FDMA_rtl.xml
+File ignored: e:/VideoDMA_System/uisrc/03_ip/uifdmadbuf/FDMA_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/VideoDMA_System'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'e:/VideoDMA_System' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2021.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/utils_1/imports/synth_1/VideoDMA_Top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/utils_1/imports/synth_1/VideoDMA_Top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top VideoDMA_Top -part xc7z020clg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-2
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 29412
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_addr is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:62]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_ba is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:63]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_cas_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:64]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_ck_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:65]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_ck_p is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:66]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_cke is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:67]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_cs_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:68]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_dm is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:69]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_dq is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:70]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_dqs_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:71]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_dqs_p is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:72]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_odt is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:73]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_ras_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:74]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_reset_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:75]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_we_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:76]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_ddr_vrn is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:79]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_ddr_vrp is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:80]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_mio is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:81]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_ps_clk is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:82]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_ps_porb is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:83]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_ps_srstb is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:84]
+WARNING: [Synth 8-2611] redeclaration of ansi port MDIO_PHY_0_mdc is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:86]
+WARNING: [Synth 8-2611] redeclaration of ansi port MDIO_PHY_0_mdio_io is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:87]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_rd is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:88]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_rx_ctl is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:89]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_rxc is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:90]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_td is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:91]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_tx_ctl is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:92]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_txc is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:93]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1566.715 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'VideoDMA_Top' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_protocol_convert_0_0' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_axi_protocol_convert_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_protocol_convert_0_0' (2#1) [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_axi_protocol_convert_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uart16550_0_0' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_axi_uart16550_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uart16550_0_0' (3#1) [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_axi_uart16550_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_gmii_to_rgmii_0_0' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_gmii_to_rgmii_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_gmii_to_rgmii_0_0' (4#1) [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_gmii_to_rgmii_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'ref_clk_out' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7071] port 'mmcm_locked_out' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7071] port 'gmii_clk_125m_out' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7071] port 'gmii_clk_25m_out' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7071] port 'gmii_clk_2_5m_out' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7071] port 'speed_mode' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7071] port 'link_status' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7071] port 'clock_speed' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7071] port 'duplex_status' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7023] instance 'gmii_to_rgmii_0' of module 'design_1_gmii_to_rgmii_0_0' has 36 connections declared, but only 27 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (5#1) [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'GPIO_T' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:535]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:535]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:535]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:535]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:535]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 127 connections declared, but only 122 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:535]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_2' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:826]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1131]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (6#1) [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_auto_pc_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1366]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1366]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_2' has 59 connections declared, but only 57 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1366]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (7#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1131]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_2' (8#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:826]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_50M_2' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_rst_ps7_0_50M_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_50M_2' (9#1) [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_rst_ps7_0_50M_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_50M_2' is unconnected for instance 'rst_ps7_0_50M' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:720]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_50M_2' is unconnected for instance 'rst_ps7_0_50M' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:720]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_50M_2' is unconnected for instance 'rst_ps7_0_50M' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:720]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_50M_2' is unconnected for instance 'rst_ps7_0_50M' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:720]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_2' has 10 connections declared, but only 6 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:720]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:727]
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_0' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_0' (10#1) [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_uiFDMA_0_0' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_uiFDMA_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_uiFDMA_0_0' (11#1) [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_uiFDMA_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M_AXI_WID' of module 'design_1_uiFDMA_0_0' is unconnected for instance 'uiFDMA_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:767]
+WARNING: [Synth 8-7023] instance 'uiFDMA_0' of module 'design_1_uiFDMA_0_0' has 54 connections declared, but only 53 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:767]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_0' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_0' (12#1) [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (13#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (14#1) [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-689] width (128) of port connection 'FDMA_S_0_fdma_rdata' does not match port width (32) of module 'design_1_wrapper' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:227]
+WARNING: [Synth 8-689] width (128) of port connection 'FDMA_S_0_fdma_wdata' does not match port width (32) of module 'design_1_wrapper' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:234]
+WARNING: [Synth 8-7071] port 'uart_16550_baudoutn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_ctsn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_dcdn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_ddis' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_dsrn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_dtrn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_out1n' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_out2n' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_ri' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_rtsn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_rxrdyn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_txrdyn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7023] instance 'design_1_wrapper_i' of module 'design_1_wrapper' has 60 connections declared, but only 48 given [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:260]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (15#1) [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/.Xil/Vivado-15448-huiyi/realtime/ila_0_stub.v:6]
+WARNING: [Synth 8-689] width (38) of port connection 'probe2' does not match port width (35) of module 'ila_0' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:265]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_VideoDMA_Top'. This will prevent further optimization [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:260]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'design_1_wrapper_i'. This will prevent further optimization [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+INFO: [Synth 8-6155] done synthesizing module 'VideoDMA_Top' (16#1) [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:23]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_UYSKKA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_UYSKKA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module design_1_ps7_0_axi_periph_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module design_1_ps7_0_axi_periph_2 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1572.441 ; gain = 5.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1572.441 ; gain = 5.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1572.441 ; gain = 5.727
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1572.441 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/processing_system7_0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/processing_system7_0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_ps7_0_50M'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_ps7_0_50M'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_uart16550_0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_uart16550_0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/system_ila_0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/system_ila_0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/gmii_to_rgmii_0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/gmii_to_rgmii_0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/util_vector_logic_0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/util_vector_logic_0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_uiFDMA_0_0/design_1_uiFDMA_0_0/design_1_uiFDMA_0_0_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/uiFDMA_0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_uiFDMA_0_0/design_1_uiFDMA_0_0/design_1_uiFDMA_0_0_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/uiFDMA_0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_protocol_convert_0_0/design_1_axi_protocol_convert_0_0/design_1_axi_protocol_convert_0_0_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_protocol_convert_0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_protocol_convert_0_0/design_1_axi_protocol_convert_0_0/design_1_axi_protocol_convert_0_0_in_context.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_protocol_convert_0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_VideoDMA_Top'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_VideoDMA_Top'
+Parsing XDC File [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sysclk_i'. [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'sysclk_i'. [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc:6]
+WARNING: [Vivado 12-627] No clocks matched 'gmii_clk_25m_out'. [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc:56]
+WARNING: [Vivado 12-627] No clocks matched 'gmii_clk_2_5m_out'. [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc:56]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc:56]
+WARNING: [Vivado 12-627] No clocks matched 'gmii_clk_125m_out'. [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc:56]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc:56]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks {gmii_clk_25m_out gmii_clk_2_5m_out}]'. [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc:56]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc:56]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks gmii_clk_125m_out]'. [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc:56]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc:56]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/VideoDMA_Top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1672.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1672.840 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1672.840 ; gain = 106.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1672.840 ; gain = 106.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 45).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 46).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 47).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 48).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 49).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 50).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 51).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 52).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 53).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 54).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 55).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 56).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 57).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 58).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 59).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 60).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 61).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 62).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 63).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 64).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 65).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 66).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 67).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 68).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 69).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 70).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 71).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 72).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 73).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 74).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 75).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 76).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 77).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 78).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 79).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 80).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 81).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 82).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 83).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 84).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 85).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 86).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 87).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 88).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 89).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 90).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 91).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 92).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 93).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 94).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 95).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 96).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 97).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 98).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 99).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 100).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 101).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 102).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 103).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 104).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 105).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 106).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 107).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 108).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 109).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 110).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 111).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 112).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 113).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 114).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 115).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 116).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 117).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 118).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 119).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 120).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 121).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 122).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 123).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 124).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 125).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 126).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 127).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 128).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 129).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 130).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 131).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 132).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 133).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 134).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 135).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 136).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 137).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 138).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 139).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 140).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 141).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 142).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 143).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 144).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 145).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 146).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 147).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 148).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 149).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 150).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 151).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 152).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 153).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 154).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 155).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 156).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 157).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 158).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 159).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 160).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 161).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 162).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 163).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 164).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 165).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 166).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 167).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 168).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 169).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 170).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 171).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 172).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 173).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 174).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 175).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 176).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 177).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 178).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 179).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 180).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 181).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 182).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 183).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 184).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 185).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 186).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 187).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 188).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 189).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 190).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 191).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 192).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 193).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 194).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 195).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 196).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 197).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 198).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 199).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 200).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 201).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 202).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 203).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 204).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 205).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 206).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 207).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 208).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 209).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 210).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 211).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 212).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 213).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 214).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 215).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 216).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 217).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 218).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 219).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 220).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 221).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 222).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 223).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 224).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 225).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 226).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 227).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 228).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 229).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 230).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 231).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 232).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 233).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 234).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 235).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 236).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 237).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 238).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 239).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 240).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 241).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 242).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 243).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 244).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 245).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 246).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 247).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 248).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 249).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 250).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 251).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 252).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 253).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 254).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 255).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 256).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 257).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 258).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 259).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 260).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 261).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 262).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_0_rx_ctl. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_0_rx_ctl. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_0_rxc. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_0_rxc. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_0_rd[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_0_rd[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_0_rd[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_0_rd[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_0_rd[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_0_rd[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_0_rd[3]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_0_rd[3]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_0_tx_ctl. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_0_tx_ctl. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_0_txc. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_0_txc. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_0_td[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_0_td[0]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_0_td[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_0_td[1]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_0_td[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_0_td[2]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_0_td[3]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_0_td[3]. (constraint file  e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0_in_context.xdc, line 30).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper_i/design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper_i/design_1_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper_i/design_1_i/rst_ps7_0_50M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper_i/design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper_i/design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper_i/design_1_i/axi_uart16550_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper_i/design_1_i/system_ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper_i/design_1_i/gmii_to_rgmii_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper_i/design_1_i/util_vector_logic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper_i/design_1_i/uiFDMA_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper_i/design_1_i/axi_protocol_convert_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ila_VideoDMA_Top. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1672.840 ; gain = 106.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'T_S_reg' in module 'VideoDMA_Top'
+INFO: [Synth 8-6159] Found Keep on FSM register 'T_S_reg' in module 'VideoDMA_Top', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    WAIT |                              010 |                              010
+                  WRITE1 |                              000 |                              000
+                  WRITE2 |                              001 |                              001
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1672.840 ; gain = 106.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port ACLK in module design_1_ps7_0_axi_periph_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module design_1_ps7_0_axi_periph_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps7_0_axi_periph_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps7_0_axi_periph_2 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1672.840 ; gain = 106.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1672.840 ; gain = 106.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1672.840 ; gain = 106.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1672.840 ; gain = 106.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1672.840 ; gain = 106.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1672.840 ; gain = 106.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1672.840 ; gain = 106.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1672.840 ; gain = 106.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1672.840 ; gain = 106.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1672.840 ; gain = 106.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |design_1_auto_pc_2                |         1|
+|2     |design_1_axi_protocol_convert_0_0 |         1|
+|3     |design_1_axi_uart16550_0_0        |         1|
+|4     |design_1_gmii_to_rgmii_0_0        |         1|
+|5     |design_1_processing_system7_0_0   |         1|
+|6     |design_1_rst_ps7_0_50M_2          |         1|
+|7     |design_1_system_ila_0_0           |         1|
+|8     |design_1_uiFDMA_0_0               |         1|
+|9     |design_1_util_vector_logic_0_0    |         1|
+|10    |ila_0                             |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |design_1_auto_pc                |     1|
+|2     |design_1_axi_protocol_convert_0 |     1|
+|3     |design_1_axi_uart16550_0        |     1|
+|4     |design_1_gmii_to_rgmii_0        |     1|
+|5     |design_1_processing_system7_0   |     1|
+|6     |design_1_rst_ps7_0_50M          |     1|
+|7     |design_1_system_ila_0           |     1|
+|8     |design_1_uiFDMA_0               |     1|
+|9     |design_1_util_vector_logic_0    |     1|
+|10    |ila                             |     1|
+|11    |CARRY4                          |    10|
+|12    |LUT1                            |   224|
+|13    |LUT2                            |     7|
+|14    |LUT3                            |     2|
+|15    |LUT4                            |    34|
+|16    |LUT5                            |     5|
+|17    |LUT6                            |     8|
+|18    |FDRE                            |    45|
+|19    |FDSE                            |     1|
+|20    |IBUF                            |     1|
+|21    |IOBUF                           |     1|
+|22    |OBUF                            |     3|
++------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1672.840 ; gain = 106.125
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1672.840 ; gain = 5.727
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1672.840 ; gain = 106.125
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1672.840 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1687.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+Synth Design complete, checksum: d746c0b
+INFO: [Common 17-83] Releasing license: Synthesis
+62 Infos, 93 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1687.203 ; gain = 120.488
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/VideoDMA_Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file VideoDMA_Top_utilization_synth.rpt -pb VideoDMA_Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  9 15:49:04 2024...

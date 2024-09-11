@@ -1,0 +1,277 @@
+timestamp=[2024-08-30 14:49:12], mode=WORKBENCH_START, duration=0:00:04.581, duration_ms=4581, data={}
+timestamp=[2024-08-30 14:49:12], mode=WORKBENCH_UI_INIT, duration=0:00:00.234, duration_ms=234, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-08-30 14:49:14], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.114, duration_ms=114, data={}
+timestamp=[2024-08-30 14:50:03], mode=PLATFORM_CREATION, duration=0:00:11.590, duration_ms=11590, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2024-08-30 14:50:22], mode=PLATFORM_GENERATION, duration=0:00:08.194, duration_ms=8194, data={name=ZYNQ7020_Platform}
+timestamp=[2024-08-30 14:53:05], mode=APP_CREATION, duration=0:00:04.750, duration_ms=4750, data={name=VideoDMA, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=ZYNQ7020_Platform, application_type=application}
+timestamp=[2024-08-30 15:01:09], mode=BUILD, duration=0:00:00.844, duration_ms=844, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-08-30 15:01:14], mode=BUILD, duration=0:00:04.688, duration_ms=4688, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-08-30 15:09:20], mode=APP_CREATION, duration=0:00:04.918, duration_ms=4918, data={name=xaxidma_example_selftest_1, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=ZYNQ7020_Platform, application_type=application}
+timestamp=[2024-08-30 15:21:17], mode=BUILD, duration=0:00:00.604, duration_ms=604, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-08-30 15:21:22], mode=BUILD, duration=0:00:04.568, duration_ms=4568, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-08-30 15:26:54], mode=BUILD, duration=0:00:00.671, duration_ms=671, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-08-30 15:26:59], mode=BUILD, duration=0:00:04.647, duration_ms=4647, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-08-30 15:27:56], mode=BUILD, duration=0:00:00.688, duration_ms=688, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-08-30 15:28:01], mode=BUILD, duration=0:00:04.609, duration_ms=4609, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-08-30 15:47:44], mode=BUILD, duration=0:00:00.688, duration_ms=688, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-08-30 15:47:49], mode=BUILD, duration=0:00:04.671, duration_ms=4671, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-08-30 16:13:34], mode=APP_CREATION, duration=0:00:04.664, duration_ms=4664, data={name=xaxidma_example_simple_intr_1, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=ZYNQ7020_Platform, application_type=application}
+timestamp=[2024-08-30 16:37:21], mode=BUILD, duration=0:00:00.375, duration_ms=375, data={name=xaxidma_example_simple_intr_1, configuration=Debug, clean_build=false}
+timestamp=[2024-09-03 17:09:05], mode=WORKBENCH_START, duration=0:00:06.320, duration_ms=6320, data={}
+timestamp=[2024-09-03 17:09:06], mode=WORKBENCH_UI_INIT, duration=0:00:00.686, duration_ms=686, data={editors_count=3, platform_editors_count=1, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,VideoDMA,VideoDMA_system,ZYNQ7020_Platform,xaxidma_example_simple_intr_1,xaxidma_example_simple_intr_1_system}
+timestamp=[2024-09-03 17:09:07], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.034, duration_ms=34, data={}
+timestamp=[2024-09-03 17:10:07], mode=PLATFORM_GENERATION, duration=0:00:03.815, duration_ms=3815, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-03 17:10:07], mode=BUILD, duration=0:00:00.172, duration_ms=172, data={name=xaxidma_example_simple_intr_1, configuration=Debug, clean_build=true}
+timestamp=[2024-09-03 17:10:07], mode=BUILD, duration=0:00:00.094, duration_ms=94, data={name=xaxidma_example_simple_intr_1_system, configuration=Debug, clean_build=true}
+timestamp=[2024-09-03 17:11:00], mode=PLATFORM_GENERATION, duration=0:00:01.420, duration_ms=1420, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-03 17:11:24], mode=PLATFORM_GENERATION, duration=0:00:01.461, duration_ms=1461, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-03 17:11:36], mode=PLATFORM_GENERATION, duration=0:00:06.999, duration_ms=6999, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-03 17:14:11], mode=BUILD, duration=0:00:00.672, duration_ms=672, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-03 17:14:18], mode=BUILD, duration=0:00:04.173, duration_ms=4173, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-03 17:22:45], mode=BUILD, duration=0:00:00.609, duration_ms=609, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-03 17:22:50], mode=BUILD, duration=0:00:04.221, duration_ms=4221, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-03 17:23:30], mode=BUILD, duration=0:00:00.234, duration_ms=234, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-03 17:23:34], mode=BUILD, duration=0:00:04.286, duration_ms=4286, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-03 17:26:41], mode=BUILD, duration=0:00:00.547, duration_ms=547, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-03 17:26:46], mode=BUILD, duration=0:00:04.282, duration_ms=4282, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-03 17:30:30], mode=BUILD, duration=0:00:00.561, duration_ms=561, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-03 17:30:34], mode=BUILD, duration=0:00:04.217, duration_ms=4217, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-03 17:31:29], mode=BUILD, duration=0:00:00.590, duration_ms=590, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-03 17:31:33], mode=BUILD, duration=0:00:04.217, duration_ms=4217, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-03 18:09:58], mode=PLATFORM_GENERATION, duration=0:00:01.548, duration_ms=1548, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-03 18:10:09], mode=PLATFORM_GENERATION, duration=0:00:07.264, duration_ms=7264, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-03 18:10:36], mode=BUILD, duration=0:00:00.672, duration_ms=672, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-03 18:10:44], mode=BUILD, duration=0:00:04.300, duration_ms=4300, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 13:58:53], mode=WORKBENCH_START, duration=0:00:05.751, duration_ms=5751, data={}
+timestamp=[2024-09-04 13:58:53], mode=WORKBENCH_UI_INIT, duration=0:00:00.574, duration_ms=574, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,VideoDMA,VideoDMA_system,ZYNQ7020_Platform}
+timestamp=[2024-09-04 13:58:54], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.024, duration_ms=24, data={}
+timestamp=[2024-09-04 14:01:25], mode=PLATFORM_GENERATION, duration=0:00:01.532, duration_ms=1532, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-04 14:01:43], mode=PLATFORM_GENERATION, duration=0:00:06.921, duration_ms=6921, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-04 14:01:57], mode=BUILD, duration=0:00:00.664, duration_ms=664, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 14:02:04], mode=BUILD, duration=0:00:04.182, duration_ms=4182, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 14:28:40], mode=PLATFORM_GENERATION, duration=0:00:01.546, duration_ms=1546, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-04 14:28:50], mode=PLATFORM_GENERATION, duration=0:00:06.880, duration_ms=6880, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-04 14:28:59], mode=BUILD, duration=0:00:00.673, duration_ms=673, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 14:29:07], mode=BUILD, duration=0:00:04.088, duration_ms=4088, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 15:00:02], mode=PLATFORM_GENERATION, duration=0:00:01.506, duration_ms=1506, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-04 15:00:14], mode=PLATFORM_GENERATION, duration=0:00:06.828, duration_ms=6828, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-04 15:03:58], mode=BUILD, duration=0:00:00.664, duration_ms=664, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 15:04:06], mode=BUILD, duration=0:00:04.190, duration_ms=4190, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 15:29:54], mode=PLATFORM_GENERATION, duration=0:00:01.495, duration_ms=1495, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-04 15:30:06], mode=PLATFORM_GENERATION, duration=0:00:07.075, duration_ms=7075, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-04 15:30:19], mode=BUILD, duration=0:00:00.639, duration_ms=639, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 15:30:27], mode=BUILD, duration=0:00:04.169, duration_ms=4169, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 15:34:20], mode=BUILD, duration=0:00:00.232, duration_ms=232, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 15:34:24], mode=BUILD, duration=0:00:04.154, duration_ms=4154, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 15:41:03], mode=BUILD, duration=0:00:00.234, duration_ms=234, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 15:41:07], mode=BUILD, duration=0:00:04.137, duration_ms=4137, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:04:47], mode=BUILD, duration=0:00:00.296, duration_ms=296, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:05:43], mode=BUILD, duration=0:00:00.290, duration_ms=290, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:09:44], mode=BUILD, duration=0:00:00.551, duration_ms=551, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:09:49], mode=BUILD, duration=0:00:04.209, duration_ms=4209, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:32:56], mode=BUILD, duration=0:00:00.297, duration_ms=297, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:34:07], mode=BUILD, duration=0:00:00.531, duration_ms=531, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:34:12], mode=BUILD, duration=0:00:04.303, duration_ms=4303, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:42:03], mode=BUILD, duration=0:00:00.547, duration_ms=547, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:42:07], mode=BUILD, duration=0:00:04.197, duration_ms=4197, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:43:55], mode=BUILD, duration=0:00:00.532, duration_ms=532, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:43:59], mode=BUILD, duration=0:00:04.209, duration_ms=4209, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:45:36], mode=BUILD, duration=0:00:00.547, duration_ms=547, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:45:41], mode=BUILD, duration=0:00:04.212, duration_ms=4212, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:47:03], mode=BUILD, duration=0:00:00.547, duration_ms=547, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:47:07], mode=BUILD, duration=0:00:04.410, duration_ms=4410, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:50:12], mode=BUILD, duration=0:00:00.531, duration_ms=531, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:50:16], mode=BUILD, duration=0:00:04.185, duration_ms=4185, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:55:12], mode=BUILD, duration=0:00:00.564, duration_ms=564, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:55:17], mode=BUILD, duration=0:00:04.219, duration_ms=4219, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:56:39], mode=BUILD, duration=0:00:00.533, duration_ms=533, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 16:56:44], mode=BUILD, duration=0:00:04.247, duration_ms=4247, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 17:05:33], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 17:05:38], mode=BUILD, duration=0:00:04.179, duration_ms=4179, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 17:13:10], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 17:13:15], mode=BUILD, duration=0:00:04.227, duration_ms=4227, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 17:26:14], mode=WORKBENCH_START, duration=0:00:06.610, duration_ms=6610, data={}
+timestamp=[2024-09-04 17:26:15], mode=WORKBENCH_UI_INIT, duration=0:00:00.535, duration_ms=535, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,VideoDMA,VideoDMA_system,ZYNQ7020_Platform}
+timestamp=[2024-09-04 17:26:15], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.019, duration_ms=19, data={}
+timestamp=[2024-09-04 17:27:14], mode=PLATFORM_GENERATION, duration=0:00:01.601, duration_ms=1601, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-04 17:27:24], mode=PLATFORM_GENERATION, duration=0:00:07.232, duration_ms=7232, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-04 17:27:43], mode=BUILD, duration=0:00:00.672, duration_ms=672, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 17:27:51], mode=BUILD, duration=0:00:04.395, duration_ms=4395, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 17:51:49], mode=BUILD, duration=0:00:00.234, duration_ms=234, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 17:51:54], mode=BUILD, duration=0:00:04.227, duration_ms=4227, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 18:11:30], mode=PLATFORM_GENERATION, duration=0:00:01.544, duration_ms=1544, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-04 18:11:39], mode=PLATFORM_GENERATION, duration=0:00:06.649, duration_ms=6649, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-04 18:11:56], mode=BUILD, duration=0:00:00.594, duration_ms=594, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-04 18:12:03], mode=BUILD, duration=0:00:04.129, duration_ms=4129, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-06 10:39:50], mode=WORKBENCH_START, duration=0:00:05.858, duration_ms=5858, data={}
+timestamp=[2024-09-06 10:39:51], mode=WORKBENCH_UI_INIT, duration=0:00:00.574, duration_ms=574, data={editors_count=2, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,VideoDMA,VideoDMA_system,ZYNQ7020_Platform}
+timestamp=[2024-09-06 10:39:51], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.035, duration_ms=35, data={}
+timestamp=[2024-09-06 10:41:01], mode=PLATFORM_GENERATION, duration=0:00:01.479, duration_ms=1479, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-06 10:41:32], mode=PLATFORM_GENERATION, duration=0:00:01.452, duration_ms=1452, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-06 10:41:52], mode=PLATFORM_GENERATION, duration=0:00:18.275, duration_ms=18275, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-06 10:42:12], mode=BUILD, duration=0:00:00.672, duration_ms=672, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-06 10:42:20], mode=BUILD, duration=0:00:04.084, duration_ms=4084, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-06 11:05:47], mode=BUILD, duration=0:00:00.547, duration_ms=547, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-06 11:05:52], mode=BUILD, duration=0:00:04.185, duration_ms=4185, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 10:40:45], mode=WORKBENCH_START, duration=0:00:05.694, duration_ms=5694, data={}
+timestamp=[2024-09-09 10:40:46], mode=WORKBENCH_UI_INIT, duration=0:00:00.530, duration_ms=530, data={editors_count=2, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,VideoDMA,VideoDMA_system,ZYNQ7020_Platform}
+timestamp=[2024-09-09 10:40:46], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.040, duration_ms=40, data={}
+timestamp=[2024-09-09 10:43:39], mode=PLATFORM_GENERATION, duration=0:00:01.589, duration_ms=1589, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-09 10:46:17], mode=PLATFORM_GENERATION, duration=0:00:18.631, duration_ms=18631, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-09 10:46:24], mode=BUILD, duration=0:00:00.672, duration_ms=672, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 10:46:31], mode=BUILD, duration=0:00:04.092, duration_ms=4092, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 11:02:33], mode=BUILD, duration=0:00:00.594, duration_ms=594, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 11:02:38], mode=BUILD, duration=0:00:04.180, duration_ms=4180, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 11:17:52], mode=BUILD, duration=0:00:00.485, duration_ms=485, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 11:18:35], mode=BUILD, duration=0:00:00.609, duration_ms=609, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 11:19:23], mode=BUILD, duration=0:00:00.359, duration_ms=359, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 11:19:41], mode=BUILD, duration=0:00:00.594, duration_ms=594, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 11:26:16], mode=BUILD, duration=0:00:00.531, duration_ms=531, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 11:26:24], mode=PLATFORM_GENERATION, duration=0:00:04.096, duration_ms=4096, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-09 11:26:24], mode=BUILD, duration=0:00:00.156, duration_ms=156, data={name=VideoDMA, configuration=Debug, clean_build=true}
+timestamp=[2024-09-09 11:26:25], mode=BUILD, duration=0:00:00.094, duration_ms=94, data={name=VideoDMA_system, configuration=Debug, clean_build=true}
+timestamp=[2024-09-09 11:26:45], mode=PLATFORM_GENERATION, duration=0:00:17.318, duration_ms=17318, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-09 11:26:46], mode=BUILD, duration=0:00:00.922, duration_ms=922, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 11:31:40], mode=BUILD, duration=0:00:00.594, duration_ms=594, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 11:31:58], mode=BUILD, duration=0:00:00.609, duration_ms=609, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 11:33:18], mode=BUILD, duration=0:00:00.766, duration_ms=766, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 11:33:22], mode=BUILD, duration=0:00:04.169, duration_ms=4169, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 13:48:29], mode=PLATFORM_GENERATION, duration=0:00:01.678, duration_ms=1678, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-09 13:48:55], mode=PLATFORM_GENERATION, duration=0:00:19.044, duration_ms=19044, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-09 13:49:18], mode=BUILD, duration=0:00:00.922, duration_ms=922, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 13:49:26], mode=BUILD, duration=0:00:04.082, duration_ms=4082, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 16:30:40], mode=WORKBENCH_START, duration=0:00:06.168, duration_ms=6168, data={}
+timestamp=[2024-09-09 16:30:41], mode=WORKBENCH_UI_INIT, duration=0:00:00.612, duration_ms=612, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,VideoDMA,VideoDMA_system,ZYNQ7020_Platform}
+timestamp=[2024-09-09 16:30:41], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.041, duration_ms=41, data={}
+timestamp=[2024-09-09 16:35:13], mode=PLATFORM_GENERATION, duration=0:00:01.657, duration_ms=1657, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-09 16:35:38], mode=PLATFORM_GENERATION, duration=0:00:18.435, duration_ms=18435, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-09 16:38:11], mode=BUILD, duration=0:00:00.110, duration_ms=110, data={name=VideoDMA, configuration=Debug, clean_build=true}
+timestamp=[2024-09-09 16:38:17], mode=BUILD, duration=0:00:00.297, duration_ms=297, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 16:46:15], mode=BUILD, duration=0:00:00.672, duration_ms=672, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 16:46:20], mode=BUILD, duration=0:00:04.420, duration_ms=4420, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 16:51:23], mode=BUILD, duration=0:00:00.610, duration_ms=610, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 16:51:28], mode=BUILD, duration=0:00:04.431, duration_ms=4431, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-09 18:08:40], mode=APP_CREATION, duration=0:00:04.093, duration_ms=4093, data={name=xemacps_example_intr_dma_1, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=ZYNQ7020_Platform, application_type=application}
+timestamp=[2024-09-10 11:02:16], mode=WORKBENCH_START, duration=0:00:06.634, duration_ms=6634, data={}
+timestamp=[2024-09-10 11:02:17], mode=WORKBENCH_UI_INIT, duration=0:00:00.650, duration_ms=650, data={editors_count=6, platform_editors_count=2, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,VideoDMA,VideoDMA_system,ZYNQ7020_Platform,xemacps_example_intr_dma_1,xemacps_example_intr_dma_1_system}
+timestamp=[2024-09-10 11:02:18], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.059, duration_ms=59, data={}
+timestamp=[2024-09-10 11:16:51], mode=APP_CREATION, duration=0:00:09.347, duration_ms=9347, data={name=xemacps_example_intr_dma_1, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=ZYNQ7020_Platform, application_type=application}
+timestamp=[2024-09-10 12:01:43], mode=PLATFORM_GENERATION, duration=0:00:01.903, duration_ms=1903, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-10 12:01:43], mode=BUILD, duration=0:00:00.172, duration_ms=172, data={name=VideoDMA, configuration=Debug, clean_build=true}
+timestamp=[2024-09-10 12:01:44], mode=BUILD, duration=0:00:00.485, duration_ms=485, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 12:06:07], mode=BUILD, duration=0:00:00.657, duration_ms=657, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 12:08:19], mode=BUILD, duration=0:00:00.407, duration_ms=407, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 12:09:10], mode=BUILD, duration=0:00:00.422, duration_ms=422, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:00:55], mode=BUILD, duration=0:00:00.423, duration_ms=423, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:10:15], mode=APP_CREATION, duration=0:00:04.579, duration_ms=4579, data={name=lwip_test, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=ZYNQ7020_Platform, application_type=application}
+timestamp=[2024-09-10 14:10:29], mode=BUILD, duration=0:00:01.823, duration_ms=1823, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:10:34], mode=BUILD, duration=0:00:04.239, duration_ms=4239, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:11:32], mode=BUILD, duration=0:00:00.439, duration_ms=439, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:11:55], mode=BUILD, duration=0:00:00.418, duration_ms=418, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:12:05], mode=BUILD, duration=0:00:00.851, duration_ms=851, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:12:21], mode=BUILD, duration=0:00:00.160, duration_ms=160, data={name=VideoDMA, configuration=Debug, clean_build=true}
+timestamp=[2024-09-10 14:12:22], mode=BUILD, duration=0:00:01.089, duration_ms=1089, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:12:42], mode=BUILD, duration=0:00:00.151, duration_ms=151, data={name=VideoDMA, configuration=Debug, clean_build=true}
+timestamp=[2024-09-10 14:12:43], mode=BUILD, duration=0:00:01.504, duration_ms=1504, data={name=VideoDMA, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:12:48], mode=BUILD, duration=0:00:04.238, duration_ms=4238, data={name=VideoDMA_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:13:31], mode=BUILD, duration=0:00:00.335, duration_ms=335, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:13:35], mode=BUILD, duration=0:00:04.154, duration_ms=4154, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:22:42], mode=BUILD, duration=0:00:00.790, duration_ms=790, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:22:46], mode=BUILD, duration=0:00:04.313, duration_ms=4313, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:43:52], mode=BUILD, duration=0:00:00.610, duration_ms=610, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:44:09], mode=BUILD, duration=0:00:00.422, duration_ms=422, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:44:44], mode=BUILD, duration=0:00:00.469, duration_ms=469, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:45:03], mode=BUILD, duration=0:00:00.485, duration_ms=485, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:45:41], mode=BUILD, duration=0:00:00.656, duration_ms=656, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:45:56], mode=BUILD, duration=0:00:00.484, duration_ms=484, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:46:47], mode=PLATFORM_GENERATION, duration=0:00:04.033, duration_ms=4033, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-10 14:46:48], mode=BUILD, duration=0:00:00.157, duration_ms=157, data={name=lwip_test, configuration=Debug, clean_build=true}
+timestamp=[2024-09-10 14:46:48], mode=BUILD, duration=0:00:00.109, duration_ms=109, data={name=lwip_test_system, configuration=Debug, clean_build=true}
+timestamp=[2024-09-10 14:47:10], mode=PLATFORM_GENERATION, duration=0:00:17.519, duration_ms=17519, data={name=ZYNQ7020_Platform}
+timestamp=[2024-09-10 14:47:11], mode=BUILD, duration=0:00:01.922, duration_ms=1922, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:48:16], mode=BUILD, duration=0:00:00.422, duration_ms=422, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 14:48:20], mode=BUILD, duration=0:00:00.469, duration_ms=469, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:03:10], mode=BUILD, duration=0:00:00.484, duration_ms=484, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:06:18], mode=BUILD, duration=0:00:00.594, duration_ms=594, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:07:43], mode=BUILD, duration=0:00:00.423, duration_ms=423, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:08:39], mode=BUILD, duration=0:00:00.454, duration_ms=454, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:08:52], mode=BUILD, duration=0:00:00.172, duration_ms=172, data={name=lwip_test, configuration=Debug, clean_build=true}
+timestamp=[2024-09-10 15:08:53], mode=BUILD, duration=0:00:00.781, duration_ms=781, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:09:05], mode=BUILD, duration=0:00:01.547, duration_ms=1547, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:09:10], mode=BUILD, duration=0:00:04.164, duration_ms=4164, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:10:17], mode=BUILD, duration=0:00:00.750, duration_ms=750, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:10:21], mode=BUILD, duration=0:00:04.163, duration_ms=4163, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:13:32], mode=BUILD, duration=0:00:00.734, duration_ms=734, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:13:37], mode=BUILD, duration=0:00:04.225, duration_ms=4225, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:15:01], mode=BUILD, duration=0:00:00.735, duration_ms=735, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:15:05], mode=BUILD, duration=0:00:04.176, duration_ms=4176, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:16:05], mode=BUILD, duration=0:00:00.735, duration_ms=735, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:16:09], mode=BUILD, duration=0:00:04.173, duration_ms=4173, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:16:45], mode=BUILD, duration=0:00:00.359, duration_ms=359, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:16:50], mode=BUILD, duration=0:00:04.096, duration_ms=4096, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:18:50], mode=BUILD, duration=0:00:00.719, duration_ms=719, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:18:54], mode=BUILD, duration=0:00:04.158, duration_ms=4158, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:32:17], mode=BUILD, duration=0:00:00.188, duration_ms=188, data={name=lwip_test, configuration=Debug, clean_build=true}
+timestamp=[2024-09-10 15:32:18], mode=BUILD, duration=0:00:00.812, duration_ms=812, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:32:25], mode=BUILD, duration=0:00:00.422, duration_ms=422, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:32:33], mode=BUILD, duration=0:00:01.376, duration_ms=1376, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:33:36], mode=BUILD, duration=0:00:00.594, duration_ms=594, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:36:03], mode=BUILD, duration=0:00:00.407, duration_ms=407, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:37:08], mode=BUILD, duration=0:00:00.594, duration_ms=594, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:46:34], mode=BUILD, duration=0:00:00.157, duration_ms=157, data={name=lwip_test, configuration=Debug, clean_build=true}
+timestamp=[2024-09-10 15:46:35], mode=BUILD, duration=0:00:00.610, duration_ms=610, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:46:51], mode=BUILD, duration=0:00:01.344, duration_ms=1344, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:47:14], mode=BUILD, duration=0:00:00.593, duration_ms=593, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:48:20], mode=BUILD, duration=0:00:00.626, duration_ms=626, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:49:06], mode=BUILD, duration=0:00:00.843, duration_ms=843, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 15:49:10], mode=BUILD, duration=0:00:04.236, duration_ms=4236, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 16:08:56], mode=BUILD, duration=0:00:00.438, duration_ms=438, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 16:09:43], mode=BUILD, duration=0:00:00.422, duration_ms=422, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 16:12:23], mode=BUILD, duration=0:00:00.406, duration_ms=406, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 16:12:48], mode=BUILD, duration=0:00:00.422, duration_ms=422, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 16:13:00], mode=BUILD, duration=0:00:00.782, duration_ms=782, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 16:13:07], mode=BUILD, duration=0:00:00.422, duration_ms=422, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 16:36:54], mode=BUILD, duration=0:00:00.422, duration_ms=422, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 16:37:18], mode=BUILD, duration=0:00:00.610, duration_ms=610, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 16:48:45], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:00:52], mode=BUILD, duration=0:00:00.162, duration_ms=162, data={name=lwip_test, configuration=Debug, clean_build=true}
+timestamp=[2024-09-10 17:00:54], mode=BUILD, duration=0:00:01.814, duration_ms=1814, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:08:53], mode=BUILD, duration=0:00:00.545, duration_ms=545, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:09:19], mode=BUILD, duration=0:00:00.791, duration_ms=791, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:09:41], mode=BUILD, duration=0:00:00.866, duration_ms=866, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:09:46], mode=BUILD, duration=0:00:04.331, duration_ms=4331, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:10:07], mode=BUILD, duration=0:00:00.346, duration_ms=346, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:10:12], mode=BUILD, duration=0:00:04.231, duration_ms=4231, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:13:39], mode=BUILD, duration=0:00:00.109, duration_ms=109, data={name=lwip_test, configuration=Debug, clean_build=true}
+timestamp=[2024-09-10 17:13:40], mode=BUILD, duration=0:00:00.609, duration_ms=609, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:15:03], mode=BUILD, duration=0:00:01.564, duration_ms=1564, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:15:07], mode=BUILD, duration=0:00:04.310, duration_ms=4310, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:17:09], mode=BUILD, duration=0:00:00.735, duration_ms=735, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:17:14], mode=BUILD, duration=0:00:04.272, duration_ms=4272, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:36:58], mode=BUILD, duration=0:00:00.405, duration_ms=405, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:37:24], mode=BUILD, duration=0:00:00.735, duration_ms=735, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:37:28], mode=BUILD, duration=0:00:04.228, duration_ms=4228, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:37:51], mode=BUILD, duration=0:00:00.345, duration_ms=345, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:37:55], mode=BUILD, duration=0:00:04.228, duration_ms=4228, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:50:19], mode=BUILD, duration=0:00:00.735, duration_ms=735, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:50:24], mode=BUILD, duration=0:00:04.285, duration_ms=4285, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:52:17], mode=BUILD, duration=0:00:00.360, duration_ms=360, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:52:22], mode=BUILD, duration=0:00:04.309, duration_ms=4309, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:53:15], mode=BUILD, duration=0:00:00.750, duration_ms=750, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:53:19], mode=BUILD, duration=0:00:04.287, duration_ms=4287, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:53:38], mode=BUILD, duration=0:00:00.351, duration_ms=351, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:53:42], mode=BUILD, duration=0:00:04.249, duration_ms=4249, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:58:13], mode=BUILD, duration=0:00:00.735, duration_ms=735, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:58:18], mode=BUILD, duration=0:00:04.290, duration_ms=4290, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:59:38], mode=BUILD, duration=0:00:00.406, duration_ms=406, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:59:50], mode=BUILD, duration=0:00:00.672, duration_ms=672, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 17:59:54], mode=BUILD, duration=0:00:03.997, duration_ms=3997, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 18:01:10], mode=BUILD, duration=0:00:00.719, duration_ms=719, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 18:01:14], mode=BUILD, duration=0:00:04.283, duration_ms=4283, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 18:01:24], mode=BUILD, duration=0:00:00.422, duration_ms=422, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 18:01:35], mode=BUILD, duration=0:00:00.718, duration_ms=718, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 18:01:39], mode=BUILD, duration=0:00:04.162, duration_ms=4162, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 18:09:59], mode=BUILD, duration=0:00:00.657, duration_ms=657, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 18:10:03], mode=BUILD, duration=0:00:03.915, duration_ms=3915, data={name=lwip_test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 18:10:28], mode=BUILD, duration=0:00:00.656, duration_ms=656, data={name=lwip_test, configuration=Debug, clean_build=false}
+timestamp=[2024-09-10 18:10:32], mode=BUILD, duration=0:00:04.104, duration_ms=4104, data={name=lwip_test_system, configuration=Debug, clean_build=false}

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Sep  9 15:46:12 2024
+# Process ID: 15548
+# Current directory: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_uiFDMA_0_0_synth_1
+# Command line: vivado.exe -log design_1_uiFDMA_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_uiFDMA_0_0.tcl
+# Log file: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_uiFDMA_0_0_synth_1/design_1_uiFDMA_0_0.vds
+# Journal file: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_uiFDMA_0_0_synth_1\vivado.jou
+# Running On: huiyi, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 17023 MB
+#-----------------------------------------------------------
+source design_1_uiFDMA_0_0.tcl -notrace

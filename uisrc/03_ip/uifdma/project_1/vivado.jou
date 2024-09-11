@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Sep  2 14:31:34 2024
+# Process ID: 9252
+# Current directory: E:/开发板资料/MLK_H4_CU01-040开发板/demo/3-1-02_ex_fdma_ddr/02_fdma_ddr_test/uisrc/03_ip/uifdma/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16272 E:\开发板资料\MLK_H4_CU01-040开发板\demo\3-1-02_ex_fdma_ddr\02_fdma_ddr_test\uisrc\03_ip\uifdma\project_1\project_1.xpr
+# Log file: E:/开发板资料/MLK_H4_CU01-040开发板/demo/3-1-02_ex_fdma_ddr/02_fdma_ddr_test/uisrc/03_ip/uifdma/project_1/vivado.log
+# Journal file: E:/开发板资料/MLK_H4_CU01-040开发板/demo/3-1-02_ex_fdma_ddr/02_fdma_ddr_test/uisrc/03_ip/uifdma/project_1\vivado.jou
+# Running On: huiyi, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 17023 MB
+#-----------------------------------------------------------
+start_gui
+open_project -read_only E:/开发板资料/MLK_H4_CU01-040开发板/demo/3-1-02_ex_fdma_ddr/02_fdma_ddr_test/uisrc/03_ip/uifdma/project_1/project_1.xpr
+update_compile_order -fileset sources_1

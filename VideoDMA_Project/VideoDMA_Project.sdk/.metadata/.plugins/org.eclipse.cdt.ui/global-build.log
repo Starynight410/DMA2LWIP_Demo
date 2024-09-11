@@ -1,0 +1,31 @@
+Nothing to build in platform 'ZYNQ7020_Platform'
+
+18:10:28 **** Incremental Build of configuration Debug for project lwip_test ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: lwip_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LE:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/bsplib/lib -o "lwip_test.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: lwip_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lwip_test.elf  |tee "lwip_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112234	   3060	3266672	3381966	 339ace	lwip_test.elf
+'Finished building: lwip_test.elf.size'
+' '
+18:10:28 **** Incremental Build of configuration Debug for project lwip_test_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 61305 E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/ZYNQ7020_Platform.xpfm standalone_domain E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test_system/Debug/system.bif
+sdcard_gen --xpfm E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/ZYNQ7020_Platform.xpfm --sys_config ZYNQ7020_Platform --bif E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test_system/Debug/system.bif --bitstream E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test/_ide/bitstream/VideoDMA_Top.bit --elf E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test/Debug/lwip_test.elf,ps7_cortexa9_0
+creating BOOT.BIN using E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test/_ide/bitstream/VideoDMA_Top.bit
+Running F:/Xilinx/Vitis/2021.2/bin/bootgen  -image E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

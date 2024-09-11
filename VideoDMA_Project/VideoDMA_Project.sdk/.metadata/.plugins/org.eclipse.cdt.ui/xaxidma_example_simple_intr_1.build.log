@@ -1,0 +1,7 @@
+17:10:07 **** Clean-only build of configuration Debug for project xaxidma_example_simple_intr_1 ****
+make clean 
+rm -rf  ./src/xaxidma_example_simple_intr.o  ./src/xaxidma_example_simple_intr.d  xaxidma_example_simple_intr_1.elf.size  xaxidma_example_simple_intr_1.elf
+' '
+
+17:10:07 Build Finished (took 156ms)
+

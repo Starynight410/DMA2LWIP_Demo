@@ -1,0 +1,1407 @@
+!SESSION 2024-09-10 11:02:02.671 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.sdk\.metadata\.bak_0.log
+Created Time: 2024-09-10 17:53:59.244
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.244
+!MESSAGE XSCT Command: [version], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.244
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.244
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.259
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.259
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.259
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.259
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.275
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.275
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.275
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.275
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.291
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.291
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.291
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.291
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.306
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.306
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.306
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.306
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.322
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.322
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.338
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.338
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.338
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.338
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.353
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.353
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Platform Cable USB II 13724327082d01" && level == 0}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.353
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Platform Cable USB II 13724327082d01" && level == 0}], Result: [null, ]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:53:59.353
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:02.479
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 6000000]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:02.479
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:02.479
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:02.479
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:02.588
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:02.588
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:05.599
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:05.615
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:05.819
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:05.819
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:05.835
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:05.835
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==0 && jtag_device_ctx=="jsn-DLC10-13724327082d01-4ba00477-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:05.850
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==0 && jtag_device_ctx=="jsn-DLC10-13724327082d01-4ba00477-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:05.850
+!MESSAGE XSCT Command: [fpga -file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test/_ide/bitstream/VideoDMA_Top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:10.158
+!MESSAGE XSCT command with result: [fpga -file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test/_ide/bitstream/VideoDMA_Top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:10.174
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:10.190
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:10.190
+!MESSAGE XSCT Command: [loadhw -hw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:10.190
+!MESSAGE XSCT command with result: [loadhw -hw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, VideoDMA_Top_0]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:10.190
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:10.190
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:10.190
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:10.205
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:10.205
+!MESSAGE XSCT Command: [source E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test/_ide/psinit/ps7_init.tcl], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:10.205
+!MESSAGE XSCT command with result: [source E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:10.205
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:29.790
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:29.790
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:32.947
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:32.947
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:32.963
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:32.963
+!MESSAGE XSCT Command: [dow E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test/Debug/lwip_test.elf], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:38.550
+!MESSAGE XSCT command with result: [dow E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test/Debug/lwip_test.elf], Result: [null, ]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:38.550
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:38.706
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:41.910
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:41.926
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:41.926
+!MESSAGE XSCT Command: [con], Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:54:45.122
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-142: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:58:12.967
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss ], Thread: Worker-133: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:58:12.967
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-133: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:58:12.967
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Thread: Worker-133: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:58:12.967
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-133: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-09-10 17:58:12.967
+!MESSAGE Generating MD5 hash for file: E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.sdk\ZYNQ7020_Platform\export\ZYNQ7020_Platform\sw\ZYNQ7020_Platform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:58:12.967
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Thread: Worker-133: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:58:12.967
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-133: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:59:37.598
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss ], Thread: Worker-151: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:59:37.598
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-151: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:59:37.598
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Thread: Worker-151: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:59:37.598
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-151: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-09-10 17:59:37.598
+!MESSAGE Generating MD5 hash for file: E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.sdk\ZYNQ7020_Platform\export\ZYNQ7020_Platform\sw\ZYNQ7020_Platform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:59:37.598
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Thread: Worker-151: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:59:37.598
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-151: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-09-10 17:59:38.019
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:59:49.422
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss ], Thread: Worker-144: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:59:49.422
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-144: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:59:49.422
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Thread: Worker-144: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:59:49.422
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-144: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-09-10 17:59:49.422
+!MESSAGE Generating MD5 hash for file: E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.sdk\ZYNQ7020_Platform\export\ZYNQ7020_Platform\sw\ZYNQ7020_Platform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:59:49.422
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Thread: Worker-144: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 17:59:49.422
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-144: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:09.511
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss ], Thread: Worker-144: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:09.511
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-144: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:09.511
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Thread: Worker-144: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:09.511
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-144: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-09-10 18:01:09.511
+!MESSAGE Generating MD5 hash for file: E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.sdk\ZYNQ7020_Platform\export\ZYNQ7020_Platform\sw\ZYNQ7020_Platform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:09.511
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Thread: Worker-144: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:09.511
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-144: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:24.375
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss ], Thread: Worker-151: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:24.375
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-151: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:24.375
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Thread: Worker-151: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:24.375
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-151: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-09-10 18:01:24.375
+!MESSAGE Generating MD5 hash for file: E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.sdk\ZYNQ7020_Platform\export\ZYNQ7020_Platform\sw\ZYNQ7020_Platform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:24.375
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Thread: Worker-151: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:24.375
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-151: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-09-10 18:01:24.813
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:34.343
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss ], Thread: Worker-153: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:34.343
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-153: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:34.343
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Thread: Worker-153: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:34.343
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-153: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-09-10 18:01:34.343
+!MESSAGE Generating MD5 hash for file: E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.sdk\ZYNQ7020_Platform\export\ZYNQ7020_Platform\sw\ZYNQ7020_Platform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:34.343
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Thread: Worker-153: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:01:34.343
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-153: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:09:58.930
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss ], Thread: Worker-152: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:09:58.934
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-152: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:09:58.935
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Thread: Worker-152: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:09:58.937
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-152: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-09-10 18:09:58.937
+!MESSAGE Generating MD5 hash for file: E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.sdk\ZYNQ7020_Platform\export\ZYNQ7020_Platform\sw\ZYNQ7020_Platform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:09:58.938
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Thread: Worker-152: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:09:58.938
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-152: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:27.999
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss ], Thread: Worker-152: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:27.999
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-152: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:27.999
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Thread: Worker-152: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:28.015
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-152: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-09-10 18:10:28.015
+!MESSAGE Generating MD5 hash for file: E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.sdk\ZYNQ7020_Platform\export\ZYNQ7020_Platform\sw\ZYNQ7020_Platform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:28.015
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Thread: Worker-152: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:28.015
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/sw/ZYNQ7020_Platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-152: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:50.999
+!MESSAGE XSCT Command: [disconnect tcfchan#32], Thread: Thread-2582
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:51.002
+!MESSAGE XSCT command with result: [disconnect tcfchan#32], Result: [null, ]. Thread: Thread-2582
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:51.035
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.223
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#40]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.223
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.269
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.269
+!MESSAGE XSCT Command: [version -server], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.278
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.278
+!MESSAGE XSCT Command: [version], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.279
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.279
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.280
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.280
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.295
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.295
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.295
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.295
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.311
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.311
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.311
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.311
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.327
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.327
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.327
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.327
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.342
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.342
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.342
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.342
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.358
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.358
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.358
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.358
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.374
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.374
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Platform Cable USB II 13724327082d01" && level == 0}], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.389
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Platform Cable USB II 13724327082d01" && level == 0}], Result: [null, ]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:54.389
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:57.469
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 6000000]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:10:57.469
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:00.485
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [{Format=no targets found with "name =~"APU*"". available targets:
+  1  xc7z020
+     2  Legacy Debug Hub, Time=1725963060485, Code=1}, ]. Thread: Worker-151: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:06.094
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:06.094
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#40]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:06.094
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:06.094
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01 (closed)]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:06.094
+!MESSAGE XSCT Command: [version -server], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.282
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.282
+!MESSAGE XSCT Command: [version], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.282
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.282
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.282
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.282
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.298
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.298
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.314
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.314
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.314
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.314
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.329
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.329
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.329
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.329
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.345
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.345
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.345
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.345
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.360
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.360
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.360
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.360
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.376
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.376
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.376
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.392
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Platform Cable USB II 13724327082d01" && level == 0}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.392
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Platform Cable USB II 13724327082d01" && level == 0}], Result: [null, ]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:07.392
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:10.502
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 6000000]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:10.502
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:10.502
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:10.502
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:10.611
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:10.611
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:13.628
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:13.638
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:13.842
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Platform Cable USB II 13724327082d01]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:13.842
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:13.858
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:13.858
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==0 && jtag_device_ctx=="jsn-DLC10-13724327082d01-4ba00477-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:13.873
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 13724327082d01" && level==0 && jtag_device_ctx=="jsn-DLC10-13724327082d01-4ba00477-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:13.873
+!MESSAGE XSCT Command: [fpga -file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test/_ide/bitstream/VideoDMA_Top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:18.178
+!MESSAGE XSCT command with result: [fpga -file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test/_ide/bitstream/VideoDMA_Top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:18.193
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:18.209
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:18.209
+!MESSAGE XSCT Command: [loadhw -hw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:18.219
+!MESSAGE XSCT command with result: [loadhw -hw E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/hw/VideoDMA_Top.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, VideoDMA_Top_0]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:18.219
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:18.219
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:18.219
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:18.225
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:18.225
+!MESSAGE XSCT Command: [source E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test/_ide/psinit/ps7_init.tcl], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:18.225
+!MESSAGE XSCT command with result: [source E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:18.225
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:31.447
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:31.447
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:34.630
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:34.630
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:34.646
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:34.646
+!MESSAGE XSCT Command: [dow E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test/Debug/lwip_test.elf], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:40.279
+!MESSAGE XSCT command with result: [dow E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/lwip_test/Debug/lwip_test.elf], Result: [null, ]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:40.279
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:43.598
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:46.803
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:46.803
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:46.803
+!MESSAGE XSCT Command: [con], Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:11:50.014
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-157: Launching SystemDebugger_lwip_test_system
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:49.743
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:49.808
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:49.855
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:49.871
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:49.918
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:49.980
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:49.996
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.044
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.044
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.045
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.046
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.046
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.047
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.047
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.047
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.048
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.048
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.049
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.049
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.049
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.049
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.049
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.049
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.050
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.050
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.050
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.050
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.050
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.051
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.051
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:50.051
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.188
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.217
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.248
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.249
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.249
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.250
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.250
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.251
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.251
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.251
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.251
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.252
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.252
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.252
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.252
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.253
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.253
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.253
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.253
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.254
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.254
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.255
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.255
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.255
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.255
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.255
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.256
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.256
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.256
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.256
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-09-10 18:13:54.256
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:18:14.748
+!MESSAGE XSCT Command: [disconnect tcfchan#40], Thread: Thread-2655
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-09-10 18:18:14.753
+!MESSAGE XSCT command with result: [disconnect tcfchan#40], Result: [null, ]. Thread: Thread-2655

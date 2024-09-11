@@ -1,0 +1,10 @@
+#ifndef SRC_ADC9228TCP_H_
+#define SRC_ADC9228TCP_H_
+
+// data buffer between PC and ZYNQ through port 10 data_connected_pcb
+uint8_t data_buffer[2048*8] __attribute__ ((__aligned__(32)));
+uint8_t * data_bufferPtr;
+
+struct tcp_pcb *pcb;			//port 7 send AdcData to Host
+
+#endif /* SRC_ADC9228TCP_H_ */

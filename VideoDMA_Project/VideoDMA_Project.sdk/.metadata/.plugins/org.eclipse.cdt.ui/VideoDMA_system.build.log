@@ -1,0 +1,10 @@
+14:12:44 **** Incremental Build of configuration Debug for project VideoDMA_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 61305 E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/ZYNQ7020_Platform.xpfm standalone_domain E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/VideoDMA_system/Debug/system.bif
+sdcard_gen --xpfm E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/ZYNQ7020_Platform/export/ZYNQ7020_Platform/ZYNQ7020_Platform.xpfm --sys_config ZYNQ7020_Platform --bif E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/VideoDMA_system/Debug/system.bif --bitstream E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/VideoDMA/_ide/bitstream/VideoDMA_Top.bit --elf E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/VideoDMA/Debug/VideoDMA.elf,ps7_cortexa9_0
+creating BOOT.BIN using E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/VideoDMA/_ide/bitstream/VideoDMA_Top.bit
+Running F:/Xilinx/Vitis/2021.2/bin/bootgen  -image E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.sdk/VideoDMA_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+14:12:48 Build Finished (took 4s.233ms)
+

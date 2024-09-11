@@ -1,0 +1,1278 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Sep  9 09:18:26 2024
+# Process ID: 20548
+# Current directory: E:/VideoDMA_System/VideoDMA_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent49604 E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.xpr
+# Log file: E:/VideoDMA_System/VideoDMA_Project/vivado.log
+# Journal file: E:/VideoDMA_System/VideoDMA_Project\vivado.jou
+# Running On: huiyi, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 17023 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at F:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at F:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at F:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at F:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at F:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at F:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at F:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at F:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:user:FDMA:1.0' found within IP repository 'e:/VideoDMA_System'.
+File in use: e:/VideoDMA_System/uisrc/03_ip/uifdma/FDMA.xml
+File ignored: e:/VideoDMA_System/uisrc/03_ip/uifdmadbuf/FDMA.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:user:FDMA_rtl:1.0' found within IP repository 'e:/VideoDMA_System'.
+File in use: e:/VideoDMA_System/uisrc/03_ip/uifdma/FDMA_rtl.xml
+File ignored: e:/VideoDMA_System/uisrc/03_ip/uifdmadbuf/FDMA_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/VideoDMA_System'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'e:/VideoDMA_System' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'e:/VideoDMA_System/VideoDMA_Project'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1567.590 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.2
+  **** Build date : Oct 19 2021 at 03:13:30
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.2.0
+  ****** Build date   : Sep 28 2021-05:44:20
+    **** Build number : 2021.2.1632779060
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 1582.738 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/13724327082d01
+open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 3327.531 ; gain = 1744.793
+set_property PROGRAM.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_uart16550:2.0 - axi_uart16550_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:gmii_to_rgmii:4.1 - gmii_to_rgmii_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Successfully read diagram <design_1> from block design file <E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd>
+delete_bd_objs [get_bd_intf_ports FDMA_S_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:2.0 axis_data_fifo_0
+endgroup
+set_property -dict [list CONFIG.FIFO_DEPTH {2048} CONFIG.IS_ACLK_ASYNC {1} CONFIG.ACLKEN_CONV_MODE {2} CONFIG.HAS_WR_DATA_COUNT {1} CONFIG.HAS_RD_DATA_COUNT {1} CONFIG.HAS_AFULL {0} CONFIG.FIFO_MEMORY_TYPE {auto}] [get_bd_cells axis_data_fifo_0]
+set_property location {3 731 566} [get_bd_cells axis_data_fifo_0]
+set_property location {1 556 597} [get_bd_cells axis_data_fifo_0]
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+set_property -dict [list CONFIG.FIFO_DEPTH {1024} CONFIG.FIFO_MODE {1} CONFIG.ACLKEN_CONV_MODE {0} CONFIG.SYNCHRONIZATION_STAGES {2}] [get_bd_cells axis_data_fifo_0]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axis_data_fifo_0/S_AXIS]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axis_data_fifo_0/s_axis_aresetn]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axis_data_fifo_0/s_axis_aclk]
+endgroup
+connect_bd_net [get_bd_pins axis_data_fifo_0/m_axis_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+regenerate_bd_layout
+validate_bd_design
+INFO: [Common 17-365] Interrupt caught but 'validate_bd_design' cannot be canceled. Please wait for command to finish.
+INFO: [Common 17-681] Processing pending cancel.
+set_property -dict [list CONFIG.HAS_TLAST {1} CONFIG.HAS_TKEEP {1} CONFIG.TDATA_NUM_BYTES {2}] [get_bd_intf_ports S_AXIS_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property -dict [list CONFIG.c_include_sg {0} CONFIG.c_sg_length_width {23} CONFIG.c_sg_include_stscntrl_strm {0} CONFIG.c_include_mm2s {0}] [get_bd_cells axi_dma_0]
+set_property location {2 468 153} [get_bd_cells axi_dma_0]
+connect_bd_intf_net [get_bd_intf_pins axis_data_fifo_0/M_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXI_S2MM] -boundary_type upper [get_bd_intf_pins axi_mem_intercon/S00_AXI]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+delete_bd_objs [get_bd_nets axi_uart16550_0_ip2intc_irpt]
+set_property location {4 1499 615} [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_pins axi_uart16550_0/ip2intc_irpt] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_pins xlconcat_0/In0] [get_bd_pins axi_dma_0/s2mm_introut]
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins processing_system7_0/IRQ_F2P]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (200 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_dma_0/m_axi_s2mm_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (200 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (200 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+Slave segment '/axi_dma_0/S_AXI_LITE/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4040_0000 [ 64K ]>.
+endgroup
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.C_NUM_MONITOR_SLOTS {3}] [get_bd_cells system_ila_0]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.C_NUM_MONITOR_SLOTS {3}] [get_bd_cells system_ila_0]'
+INFO: [Common 17-17] undo 'startgroup'
+regenerate_bd_layout
+set_property name rest_0 [get_bd_ports s_axis_aresetn_0]
+set_property name restn_0 [get_bd_ports rest_0]
+set_property name rstn_i [get_bd_ports restn_0]
+set_property name sysclk_0 [get_bd_ports s_axis_aclk_0]
+delete_bd_objs [get_bd_nets s_axis_aresetn_0_1] [get_bd_ports rstn_i]
+delete_bd_objs [get_bd_nets s_axis_aclk_0_1] [get_bd_ports sysclk_0]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets s_axis_aclk_0_1] [get_bd_ports sysclk_0]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets s_axis_aresetn_0_1] [get_bd_ports rstn_i]'
+set_property name sysclk_i [get_bd_ports sysclk_0]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.C_MON_TYPE {MIX}] [get_bd_cells system_ila_0]
+endgroup
+connect_bd_net [get_bd_pins system_ila_0/probe0] [get_bd_pins axi_dma_0/s2mm_introut]
+regenerate_bd_layout
+assign_bd_address
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/axi_dma_0/Data_S2MM' at <0x0000_0000 [ 512M ]>.
+validate_bd_design
+make_wrapper -files [get_files E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_0
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_0 /axi_gpio_0/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (200 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (200 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+Slave segment '/axi_gpio_0/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4120_0000 [ 64K ]>.
+endgroup
+set_property name gpio_rtl [get_bd_intf_ports gpio_rtl_0]
+regenerate_bd_layout
+validate_bd_design
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins processing_system7_0/FCLK_CLK0]
+startgroup
+make_bd_pins_external  [get_bd_pins processing_system7_0/FCLK_CLK0]
+endgroup
+set_property name FCLK_CLK [get_bd_ports FCLK_CLK0_0]
+undo
+INFO: [Common 17-17] undo 'set_property name FCLK_CLK [get_bd_ports FCLK_CLK0_0]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'make_bd_pins_external  [get_bd_pins processing_system7_0/FCLK_CLK0]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins processing_system7_0/FCLK_CLK0]'
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {200} CONFIG.PCW_EN_CLK1_PORT {1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins processing_system7_0/FCLK_CLK1]
+endgroup
+set_property name FCLK_CLK1 [get_bd_ports FCLK_CLK1_0]
+regenerate_bd_layout
+validate_bd_design
+make_wrapper -files [get_files E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1}] [get_bd_cells axi_gpio_0]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+make_wrapper -files [get_files E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_cells axi_gpio_0]
+delete_bd_objs [get_bd_intf_ports gpio_rtl]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {2}] [get_bd_cells ps7_0_axi_periph]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+make_wrapper -files [get_files E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE6_WIDTH {2} CONFIG.C_PROBE2_WIDTH {2} CONFIG.C_PROBE1_WIDTH {16} CONFIG.C_NUM_OF_PROBES {7}] [get_ips ila_0]
+reset_run ila_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/ila_0_synth_1
+
+reset_run design_1_processing_system7_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_processing_system7_0_0_synth_1
+
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/utils_1/imports/synth_1/VideoDMA_Top.dcp with file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/VideoDMA_Top.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+Exporting to file e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0.hwh
+Generated Hardware Definition File e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/design_1_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_data_fifo_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+Exporting to file e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 4b877e9f62484245; cache size = 276.419 MB.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+[Mon Sep  9 10:10:54 2024] Launched ila_0_synth_1, design_1_processing_system7_0_0_synth_1, design_1_system_ila_0_0_synth_1, design_1_xbar_0_synth_1, design_1_axi_dma_0_0_synth_1, design_1_axis_data_fifo_0_0_synth_1, design_1_auto_pc_1_synth_1...
+Run output will be captured here:
+ila_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/ila_0_synth_1/runme.log
+design_1_processing_system7_0_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_system_ila_0_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_system_ila_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_xbar_0_synth_1/runme.log
+design_1_axi_dma_0_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_axi_dma_0_0_synth_1/runme.log
+design_1_axis_data_fifo_0_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_axis_data_fifo_0_0_synth_1/runme.log
+design_1_auto_pc_1_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_auto_pc_1_synth_1/runme.log
+[Mon Sep  9 10:10:54 2024] Launched synth_1...
+Run output will be captured here: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 4401.164 ; gain = 56.387
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+[Mon Sep  9 10:17:45 2024] Launched synth_1...
+Run output will be captured here: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/runme.log
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-2
+Top: VideoDMA_Top
+INFO: [Device 21-403] Loading part xc7z020clg484-2
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_addr is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:64]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_ba is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:65]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_cas_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:66]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_ck_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:67]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_ck_p is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:68]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_cke is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:69]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_cs_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:70]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_dm is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:71]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_dq is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:72]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_dqs_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:73]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_dqs_p is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:74]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_odt is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:75]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_ras_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:76]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_reset_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:77]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_we_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:78]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_ddr_vrn is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:81]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_ddr_vrp is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:82]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_mio is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:83]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_ps_clk is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:84]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_ps_porb is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:85]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_ps_srstb is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:86]
+WARNING: [Synth 8-2611] redeclaration of ansi port MDIO_PHY_0_mdc is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:88]
+WARNING: [Synth 8-2611] redeclaration of ansi port MDIO_PHY_0_mdio_io is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:89]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_rd is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:90]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_rx_ctl is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:91]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_rxc is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:92]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_td is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:93]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_tx_ctl is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:94]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_txc is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:95]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 4936.473 ; gain = 360.531
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'VideoDMA_Top' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (2#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:353]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:353]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'design_1_axi_dma_0_0' has 43 connections declared, but only 41 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:353]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_3' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:794]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1829]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (3#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-3848] Net S_AXI_arready in module/entity s00_couplers_imp_7HNO1D does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1902]
+WARNING: [Synth 8-3848] Net S_AXI_rdata in module/entity s00_couplers_imp_7HNO1D does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1914]
+WARNING: [Synth 8-3848] Net S_AXI_rlast in module/entity s00_couplers_imp_7HNO1D does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1915]
+WARNING: [Synth 8-3848] Net S_AXI_rvalid in module/entity s00_couplers_imp_7HNO1D does not have driver. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1916]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (4#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1829]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_3' (5#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:794]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uart16550_0_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_axi_uart16550_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uart16550_0_0' (6#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_axi_uart16550_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_data_fifo_0_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_data_fifo_0_0' (7#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'axis_wr_data_count' of module 'design_1_axis_data_fifo_0_0' is unconnected for instance 'axis_data_fifo_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:480]
+WARNING: [Synth 8-7071] port 'axis_rd_data_count' of module 'design_1_axis_data_fifo_0_0' is unconnected for instance 'axis_data_fifo_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:480]
+WARNING: [Synth 8-7023] instance 'axis_data_fifo_0' of module 'design_1_axis_data_fifo_0_0' has 15 connections declared, but only 13 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:480]
+INFO: [Synth 8-6157] synthesizing module 'design_1_gmii_to_rgmii_0_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_gmii_to_rgmii_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_gmii_to_rgmii_0_0' (8#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_gmii_to_rgmii_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'ref_clk_out' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:494]
+WARNING: [Synth 8-7071] port 'mmcm_locked_out' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:494]
+WARNING: [Synth 8-7071] port 'gmii_clk_125m_out' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:494]
+WARNING: [Synth 8-7071] port 'gmii_clk_25m_out' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:494]
+WARNING: [Synth 8-7071] port 'gmii_clk_2_5m_out' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:494]
+WARNING: [Synth 8-7071] port 'speed_mode' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:494]
+WARNING: [Synth 8-7071] port 'link_status' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:494]
+WARNING: [Synth 8-7071] port 'clock_speed' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:494]
+WARNING: [Synth 8-7071] port 'duplex_status' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:494]
+WARNING: [Synth 8-7023] instance 'gmii_to_rgmii_0' of module 'design_1_gmii_to_rgmii_0_0' has 36 connections declared, but only 27 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:494]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (9#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'GPIO_T' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:522]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RRESP' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:522]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:522]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:522]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:522]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:522]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:522]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:522]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 127 connections declared, but only 119 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:522]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_2' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1034]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1572]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (10#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1572]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1704]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (11#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1704]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:2038]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (12#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (13#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:2038]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (14#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_wstrb' does not match port width (8) of module 'design_1_xbar_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1549]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1531]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1531]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 40 connections declared, but only 38 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1531]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_2' (15#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1034]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_50M_2' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_rst_ps7_0_50M_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_50M_2' (16#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_rst_ps7_0_50M_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_50M_2' is unconnected for instance 'rst_ps7_0_50M' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:722]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_50M_2' is unconnected for instance 'rst_ps7_0_50M' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:722]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_50M_2' is unconnected for instance 'rst_ps7_0_50M' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:722]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_50M_2' is unconnected for instance 'rst_ps7_0_50M' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:722]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_2' has 10 connections declared, but only 6 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:722]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:729]
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_0' (17#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_0' (18#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (19#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (20#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (21#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (22#1) [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-7071] port 'uart_16550_baudoutn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:171]
+WARNING: [Synth 8-7071] port 'uart_16550_ctsn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:171]
+WARNING: [Synth 8-7071] port 'uart_16550_dcdn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:171]
+WARNING: [Synth 8-7071] port 'uart_16550_ddis' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:171]
+WARNING: [Synth 8-7071] port 'uart_16550_dsrn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:171]
+WARNING: [Synth 8-7071] port 'uart_16550_dtrn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:171]
+WARNING: [Synth 8-7071] port 'uart_16550_out1n' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:171]
+WARNING: [Synth 8-7071] port 'uart_16550_out2n' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:171]
+WARNING: [Synth 8-7071] port 'uart_16550_ri' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:171]
+WARNING: [Synth 8-7071] port 'uart_16550_rtsn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:171]
+WARNING: [Synth 8-7071] port 'uart_16550_rxrdyn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:171]
+WARNING: [Synth 8-7071] port 'uart_16550_txrdyn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:171]
+WARNING: [Synth 8-7023] instance 'design_1_wrapper_i' of module 'design_1_wrapper' has 53 connections declared, but only 41 given [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:171]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:216]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (23#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-20548-huiyi/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_VideoDMA_Top'. This will prevent further optimization [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:216]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'design_1_wrapper_i'. This will prevent further optimization [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:171]
+INFO: [Synth 8-6155] done synthesizing module 'VideoDMA_Top' (24#1) [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:23]
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4994.551 ; gain = 418.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 5012.477 ; gain = 436.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 5012.477 ; gain = 436.535
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/ip/ila_0/ila_0.dcp' for cell 'ila_VideoDMA_Top'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.dcp' for cell 'design_1_wrapper_i/design_1_i/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0.dcp' for cell 'design_1_wrapper_i/design_1_i/axi_uart16550_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axis_data_fifo_0_0/design_1_axis_data_fifo_0_0.dcp' for cell 'design_1_wrapper_i/design_1_i/axis_data_fifo_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0.dcp' for cell 'design_1_wrapper_i/design_1_i/gmii_to_rgmii_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_wrapper_i/design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2.dcp' for cell 'design_1_wrapper_i/design_1_i/rst_ps7_0_50M'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.dcp' for cell 'design_1_wrapper_i/design_1_i/system_ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0.dcp' for cell 'design_1_wrapper_i/design_1_i/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.dcp' for cell 'design_1_wrapper_i/design_1_i/axi_mem_intercon/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_wrapper_i/design_1_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_wrapper_i/design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.249 . Memory (MB): peak = 5039.996 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 949 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_board.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_board.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_uart16550_0/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_uart16550_0/U0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_uart16550_0/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_uart16550_0/U0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib/inst'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/gmii_to_rgmii_0/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/gmii_to_rgmii_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_dma_0/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_dma_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_VideoDMA_Top/inst'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_VideoDMA_Top/inst'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc]
+Finished Parsing XDC File [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc]
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/gmii_to_rgmii_0/U0'
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'design_1_gmii_to_rgmii_0_0_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:7]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:20]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:21]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:24]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:32]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:33]
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/gmii_to_rgmii_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_dma_0/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_dma_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 12 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 5189.309 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 397 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 392 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 5371.996 ; gain = 796.055
+79 Infos, 187 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 5371.996 ; gain = 906.375
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_board.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_board.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_uart16550_0/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_uart16550_0/U0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_uart16550_0/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_uart16550_0/U0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib/inst'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/gmii_to_rgmii_0/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/gmii_to_rgmii_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_dma_0/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_dma_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_VideoDMA_Top/inst'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_VideoDMA_Top/inst'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc]
+Finished Parsing XDC File [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc]
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/gmii_to_rgmii_0/U0'
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'design_1_gmii_to_rgmii_0_0_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:7]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:20]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:21]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:24]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:32]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:33]
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/gmii_to_rgmii_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_dma_0/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_dma_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 12 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 5404.453 ; gain = 32.457
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/utils_1/imports/synth_1/VideoDMA_Top.dcp with file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/VideoDMA_Top.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Mon Sep  9 10:36:24 2024] Launched synth_1...
+Run output will be captured here: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/runme.log
+[Mon Sep  9 10:36:24 2024] Launched impl_1...
+Run output will be captured here: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/runme.log
+close_design
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+close_bd_design [get_bd_designs design_1]
+write_hw_platform -fixed -include_bit -force -file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Top.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Top.xsa ...
+INFO: [Vivado 12-12464] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Top.xsa
+write_hw_platform: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 5452.707 ; gain = 0.000
+INFO: [Hsi 55-2053] elapsed time for repository (F:/Xilinx/Vivado/2021.2/data/embeddedsw) loading 1 seconds
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+close_project
+open_project E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:user:FDMA:1.0' found within IP repository 'e:/VideoDMA_System'.
+File in use: e:/VideoDMA_System/uisrc/03_ip/uifdma/FDMA.xml
+File ignored: e:/VideoDMA_System/uisrc/03_ip/uifdmadbuf/FDMA.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:user:FDMA_rtl:1.0' found within IP repository 'e:/VideoDMA_System'.
+File in use: e:/VideoDMA_System/uisrc/03_ip/uifdma/FDMA_rtl.xml
+File ignored: e:/VideoDMA_System/uisrc/03_ip/uifdmadbuf/FDMA_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/VideoDMA_System'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'e:/VideoDMA_System' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'e:/VideoDMA_System/VideoDMA_Project'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 5452.707 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_uart16550:2.0 - axi_uart16550_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:gmii_to_rgmii:4.1 - gmii_to_rgmii_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Successfully read diagram <design_1> from block design file <E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd>
+regenerate_bd_layout
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.2.0
+  ****** Build date   : Sep 28 2021-05:44:20
+    **** Build number : 2021.2.1632779060
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 5452.707 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/13724327082d01
+set_property PROGRAM.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 5452.707 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]]
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arid was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arburst was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arlock was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arqos was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rid was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rresp was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awid was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awburst was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awlock was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awqos was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_bid was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arburst was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arlock was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arqos was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rresp was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awburst was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awlock was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awqos was not found in the design.
+Processed interface S01_AXI_1_ila1_slot0
+Processed interface axi_mem_intercon_M00_AXI_ila1_slot1
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+WARNING: Simulation object fdma_wbusy was not found in the design.
+WARNING: Simulation object fdma_wvalid was not found in the design.
+WARNING: Simulation object fdma_wareq was not found in the design.
+WARNING: Simulation object fdma_wdata_1 was not found in the design.
+WARNING: Simulation object test_error was not found in the design.
+WARNING: Simulation object T_S was not found in the design.
+WARNING: Simulation object fdma_rbusy was not found in the design.
+WARNING: Simulation object fdma_rvalid was not found in the design.
+WARNING: Simulation object fdma_wdata was not found in the design.
+WARNING: Simulation object fdma_rdata was not found in the design.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/13724327082d01
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/13724327082d01
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 5452.707 ; gain = 0.000
+Processed interface S01_AXI_1_ila1_slot0
+Processed interface axi_mem_intercon_M00_AXI_ila1_slot1
+WARNING: Simulation object fdma_wbusy was not found in the design.
+WARNING: Simulation object fdma_wvalid was not found in the design.
+WARNING: Simulation object fdma_wareq was not found in the design.
+WARNING: Simulation object fdma_wdata_1 was not found in the design.
+WARNING: Simulation object test_error was not found in the design.
+WARNING: Simulation object T_S was not found in the design.
+WARNING: Simulation object fdma_rbusy was not found in the design.
+WARNING: Simulation object fdma_rvalid was not found in the design.
+WARNING: Simulation object fdma_wdata was not found in the design.
+WARNING: Simulation object fdma_rdata was not found in the design.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/13724327082d01
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/13724327082d01
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 5452.707 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]]
+Processed interface S01_AXI_1_ila1_slot0
+Processed interface axi_mem_intercon_M00_AXI_ila1_slot1
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+WARNING: Simulation object fdma_wbusy was not found in the design.
+WARNING: Simulation object fdma_wvalid was not found in the design.
+WARNING: Simulation object fdma_wareq was not found in the design.
+WARNING: Simulation object fdma_wdata_1 was not found in the design.
+WARNING: Simulation object test_error was not found in the design.
+WARNING: Simulation object T_S was not found in the design.
+WARNING: Simulation object fdma_rbusy was not found in the design.
+WARNING: Simulation object fdma_rvalid was not found in the design.
+WARNING: Simulation object fdma_wdata was not found in the design.
+WARNING: Simulation object fdma_rdata was not found in the design.
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {S_AXIS_tdata} {S_AXIS_tkeep} {S_AXIS_tlast} {S_AXIS_tready} {S_AXIS_tvalid} {state} }
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes trans_start_i -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes S_AXIS_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Sep-09 10:57:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2024-Sep-09 10:57:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Sep-09 10:57:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2024-Sep-09 10:57:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Sep-09 10:58:11
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_2' trigger was stopped by user at 2024-Sep-09 10:58:38
+WARNING: [Labtools 27-157] hw_ila [hw_ila_2] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Sep-09 10:58:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2024-Sep-09 10:58:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Sep-09 10:58:52
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Sep-09 11:03:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2024-Sep-09 11:03:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Sep-09 11:04:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2024-Sep-09 11:04:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Sep-09 11:06:00
+run_hw_ila: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 5452.707 ; gain = 0.000
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2024-Sep-09 11:06:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-09 11:07:10
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-09 11:42:21
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-09 11:45:25
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2024-Sep-09 11:45:50
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-09 11:45:50
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Sep-09 11:45:50
+Processed interface S01_AXI_1_ila1_slot0
+Processed interface axi_mem_intercon_M00_AXI_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {design_1_wrapper_i/design_1_i/system_ila_0/inst/probe0_1} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_ar_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_aw_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_b_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_r_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_w_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_ar_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_aw_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_b_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_r_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_w_ctrl} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arprot} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awprot} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_bready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_bresp} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_bvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rdata} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wdata} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wstrb} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_ar_cnt} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_araddr} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arcache} {AR_Channel_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arlen} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arsize} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_aw_cnt} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awaddr} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awcache} {AW_Channel_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awlen} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awsize} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_b_cnt} {B_Channel_(i1:s0)_(S01_AXI_1)} {Interface_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_r_cnt} {R_Channel_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rlast} {W_Channel_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wlast} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_araddr} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arcache} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arprot} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arsize} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awaddr} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awcache} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awprot} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awsize} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_bready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_bresp} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_bvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rdata} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rlast} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wdata} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wlast} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wready} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wstrb} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wvalid} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_ar_cnt} {AR_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arlen} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_aw_cnt} {AW_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awlen} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_b_cnt} {B_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)} {Interface_(i1:s1)_(axi_mem_intercon_M00_AXI)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_r_cnt} {R_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)} {W_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)} }
+set_property NAME.CUSTOM axi_dma_0_s2mm_introut [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/probe0_1] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : ARPROT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arprot] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : ARREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arready] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : ARVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arvalid] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : AWPROT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awprot] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : AWREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awready] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : AWVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awvalid] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : BREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_bready] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : BRESP} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_bresp] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : BVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_bvalid] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : RDATA} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rdata] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : RREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rready] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : RVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rvalid] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : WDATA} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wdata] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : WREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wready] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : WSTRB} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wstrb] 
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : WVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wvalid] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AR_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_ar_cnt] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : ARADDR} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_araddr] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : ARCACHE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arcache] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AR Channel  Events} [get_hw_probes AR_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : ARLEN} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arlen] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : ARSIZE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arsize] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AW_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_aw_cnt] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AWADDR} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awaddr] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AWCACHE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awcache] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AW Channel  Events} [get_hw_probes AW_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AWLEN} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awlen] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AWSIZE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awsize] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : B_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_b_cnt] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : B Channel  Events} [get_hw_probes B_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : Interface  Events} [get_hw_probes Interface_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : R_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_r_cnt] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : R Channel  Events} [get_hw_probes R_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : RLAST} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rlast] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : W Channel  Events} [get_hw_probes W_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : WLAST} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wlast] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : ARADDR} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_araddr] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : ARCACHE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arcache] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : ARPROT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arprot] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : ARREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arready] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : ARSIZE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arsize] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : ARVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arvalid] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : AWADDR} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awaddr] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : AWCACHE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awcache] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : AWPROT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awprot] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : AWREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awready] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : AWSIZE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awsize] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : AWVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awvalid] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : BREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_bready] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : BRESP} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_bresp] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : BVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_bvalid] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : RDATA} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rdata] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : RLAST} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rlast] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : RREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rready] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : RVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rvalid] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : WDATA} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wdata] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : WLAST} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wlast] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : WREADY} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wready] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : WSTRB} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wstrb] 
+set_property NAME.CUSTOM {slot_1 : axi_dma_0_M_AXI_S2MM : WVALID} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wvalid] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : AR_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_ar_cnt] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : AR Channel  Events} [get_hw_probes AR_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : ARLEN} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arlen] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : AW_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_aw_cnt] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : AW Channel  Events} [get_hw_probes AW_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : AWLEN} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awlen] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : B_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_b_cnt] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : B Channel  Events} [get_hw_probes B_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : Interface  Events} [get_hw_probes Interface_(i1:s1)_(axi_mem_intercon_M00_AXI)] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : R_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_r_cnt] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : R Channel  Events} [get_hw_probes R_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)] 
+set_property NAME.CUSTOM {slot_1 : axi_mem_intercon_M00_AXI : W Channel  Events} [get_hw_probes W_Channel_(i1:s1)_(axi_mem_intercon_M00_AXI)] 
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_ar_cnt} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_araddr} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arcache} {AR_Channel_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arlen} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arsize} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_aw_cnt} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awaddr} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awcache} {AW_Channel_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awlen} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awsize} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_b_cnt} {B_Channel_(i1:s0)_(S01_AXI_1)} {Interface_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_r_cnt} {R_Channel_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rlast} {W_Channel_(i1:s0)_(S01_AXI_1)} {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wlast} }
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AR_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_ar_cnt] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : ARADDR} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_araddr] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : ARCACHE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arcache] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AR Channel  Events} [get_hw_probes AR_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : ARLEN} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arlen] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : ARSIZE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_arsize] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AW_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_aw_cnt] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AWADDR} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awaddr] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AWCACHE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awcache] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AW Channel  Events} [get_hw_probes AW_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AWLEN} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awlen] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : AWSIZE} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_awsize] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : B_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_b_cnt] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : B Channel  Events} [get_hw_probes B_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : Interface  Events} [get_hw_probes Interface_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : R_CNT} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_r_cnt] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : R Channel  Events} [get_hw_probes R_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : RLAST} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_rlast] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : W Channel  Events} [get_hw_probes W_Channel_(i1:s0)_(S01_AXI_1)] 
+set_property NAME.CUSTOM {slot_0 : S01_AXI_1 : WLAST} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wlast] 
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-09 11:50:12
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Sep-09 11:50:12
+Processing Interface S01_AXI_1_ila1_slot0
+Processing Interface axi_mem_intercon_M00_AXI_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-09 11:50:28
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-09 11:51:35
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Sep-09 11:51:48
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Sep-09 11:54:02
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-09 11:54:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2024-Sep-09 11:54:16
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {3} CONFIG.C_NUM_MONITOR_SLOTS {3}] [get_bd_cells system_ila_0]
+endgroup
+validate_bd_design
+connect_bd_net [get_bd_pins system_ila_0/probe1] [get_bd_pins axis_data_fifo_0/axis_wr_data_count]
+connect_bd_net [get_bd_pins system_ila_0/probe2] [get_bd_pins axis_data_fifo_0/axis_rd_data_count]
+startgroup
+endgroup
+startgroup
+endgroup
+regenerate_bd_layout
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.C_NUM_MONITOR_SLOTS {2}] [get_bd_cells system_ila_0]
+endgroup
+regenerate_bd_layout
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins gmii_to_rgmii_0/clkin]
+connect_bd_net [get_bd_pins gmii_to_rgmii_0/clkin] [get_bd_pins processing_system7_0/FCLK_CLK1]
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100}] [get_bd_cells processing_system7_0]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 5452.707 ; gain = 0.000
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {50}] [get_bd_cells processing_system7_0]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 5452.707 ; gain = 0.000
+make_wrapper -files [get_files E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK1]
+connect_bd_net [get_bd_ports FCLK_CLK1] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK1] [get_bd_pins gmii_to_rgmii_0/clkin]
+regenerate_bd_layout
+validate_bd_design
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /FCLK_CLK1(200000000) and /processing_system7_0/FCLK_CLK0(50000000)
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+set_property -dict [list CONFIG.FREQ_HZ {50000000}] [get_bd_ports FCLK_CLK1]
+validate_bd_design
+save_bd_design
+Wrote  : <E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/utils_1/imports/synth_1/VideoDMA_Top.dcp with file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/VideoDMA_Top.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1
+
+reset_run design_1_rst_ps7_0_50M_2_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_rst_ps7_0_50M_2_synth_1
+
+reset_run design_1_processing_system7_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_processing_system7_0_0_synth_1
+
+reset_run design_1_axi_uart16550_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_axi_uart16550_0_0_synth_1
+
+reset_run design_1_system_ila_0_0_synth_1
+reset_run design_1_xbar_0_synth_1
+reset_run design_1_axi_dma_0_0_synth_1
+reset_run design_1_axis_data_fifo_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uart16550_0 .
+Exporting to file e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0.hwh
+Generated Hardware Definition File e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/design_1_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_data_fifo_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+Exporting to file e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 7585c7483cbd5cb8; cache size = 306.361 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_uart16550_0_0, cache-ID = 964b82411b1b0186; cache size = 306.361 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_rst_ps7_0_50M_2, cache-ID = 52779f6895a10388; cache size = 306.361 MB.
+[Mon Sep  9 12:02:08 2024] Launched design_1_processing_system7_0_0_synth_1, design_1_system_ila_0_0_synth_1, design_1_xbar_0_synth_1, design_1_axi_dma_0_0_synth_1, design_1_axis_data_fifo_0_0_synth_1, design_1_auto_pc_1_synth_1, synth_1...
+Run output will be captured here:
+design_1_processing_system7_0_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_system_ila_0_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_system_ila_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_xbar_0_synth_1/runme.log
+design_1_axi_dma_0_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_axi_dma_0_0_synth_1/runme.log
+design_1_axis_data_fifo_0_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_axis_data_fifo_0_0_synth_1/runme.log
+design_1_auto_pc_1_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_auto_pc_1_synth_1/runme.log
+synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/runme.log
+[Mon Sep  9 12:02:08 2024] Launched impl_1...
+Run output will be captured here: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 5452.707 ; gain = 0.000
+regenerate_bd_layout
+write_hw_platform -fixed -include_bit -force -file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Top.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Top.xsa ...
+INFO: [Vivado 12-12464] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Top.xsa
+write_hw_platform: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 5687.863 ; gain = 62.723
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Sep-09 13:52:05
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-09 13:52:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2024-Sep-09 13:52:41
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Sep-09 13:53:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2024-Sep-09 13:53:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Sep-09 13:54:47
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_2' trigger was stopped by user at 2024-Sep-09 13:55:15
+WARNING: [Labtools 27-157] hw_ila [hw_ila_2] stopped. No data to upload.
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2024-Sep-09 13:55:23
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+save_wave_config {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  9 14:23:52 2024...

@@ -1,0 +1,55 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.736445",
+   "Default View_TopLeft":"-124,-143",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 1830 -y 140 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1830 -y 160 -defaultsOSRD
+preplace port uart_16550 -pg 1 -lvl 6 -x 1830 -y 580 -defaultsOSRD
+preplace port MDIO_PHY_0 -pg 1 -lvl 6 -x 1830 -y 230 -defaultsOSRD
+preplace port RGMII_0 -pg 1 -lvl 6 -x 1830 -y 250 -defaultsOSRD
+preplace port FDMA_S_0 -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port port-id_FCLK_RESET0_N -pg 1 -lvl 6 -x 1830 -y 180 -defaultsOSRD
+preplace port port-id_FCLK_CLK0 -pg 1 -lvl 6 -x 1830 -y 500 -defaultsOSRD
+preplace portBus GPIO_TRIG -pg 1 -lvl 6 -x 1830 -y 120 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 4 -x 1230 -y 150 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 200 -y 200 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -x 1230 -y 560 -defaultsOSRD
+preplace inst axi_uart16550_0 -pg 1 -lvl 5 -x 1670 -y 590 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 3 -x 810 -y 290 -defaultsOSRD
+preplace inst gmii_to_rgmii_0 -pg 1 -lvl 5 -x 1670 -y 330 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 4 -x 1230 -y 370 -defaultsOSRD
+preplace inst uiFDMA_0 -pg 1 -lvl 2 -x 510 -y 120 -defaultsOSRD
+preplace inst axi_protocol_convert_0 -pg 1 -lvl 3 -x 810 -y 120 -defaultsOSRD
+preplace netloc axi_uart16550_0_ip2intc_irpt 1 3 3 990 430 1480J 490 1810
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 30 300 370 230 650 200 980 300 1490 500 NJ
+preplace netloc processing_system7_0_FCLK_CLK1 1 4 1 1510 220n
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 20 40 NJ 40 NJ 40 970 310 1500 170 1810J
+preplace netloc processing_system7_0_GPIO_O 1 4 2 NJ 120 NJ
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 4 380 240 660 210 960 680 1500J
+preplace netloc util_vector_logic_0_Res 1 4 1 1500 330n
+preplace netloc FDMA_S_0_1 1 0 2 NJ 100 NJ
+preplace netloc axi_protocol_convert_0_M_AXI 1 3 1 N 120
+preplace netloc axi_uart16550_0_UART 1 5 1 NJ 580
+preplace netloc gmii_to_rgmii_0_MDIO_PHY 1 5 1 NJ 230
+preplace netloc gmii_to_rgmii_0_RGMII 1 5 1 NJ 250
+preplace netloc processing_system7_0_DDR 1 4 2 NJ 140 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 4 2 NJ 160 NJ
+preplace netloc processing_system7_0_GMII_ETHERNET_0 1 4 1 1530 60n
+preplace netloc processing_system7_0_MDIO_ETHERNET_0 1 4 1 1520 80n
+preplace netloc processing_system7_0_M_AXI_GP0 1 3 2 990 440 1470
+preplace netloc ps7_0_axi_periph_M00_AXI 1 4 1 N 560
+preplace netloc uiFDMA_0_M_AXI 1 2 1 640 100n
+levelinfo -pg 1 0 200 510 810 1230 1670 1830
+pagesize -pg 1 -db -bbox -sgen -130 0 2000 690
+"
+}
+{
+   "da_axi4_cnt":"28",
+   "da_axi4_s2mm_cnt":"4",
+   "da_board_cnt":"1",
+   "da_clkrst_cnt":"20",
+   "da_ps7_cnt":"1"
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;lwip_test/src/echo.c&apos; to &apos;lwip_func.c&apos;" description="Rename resource &apos;echo.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/echo.c" name="lwip_func.c" stamp="1725958334988" updateReferences="true"/>
+</session>

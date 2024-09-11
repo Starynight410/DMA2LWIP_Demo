@@ -1,0 +1,526 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Sep  9 15:35:11 2024
+# Process ID: 55960
+# Current directory: E:/VideoDMA_System/VideoDMA_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15392 E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.xpr
+# Log file: E:/VideoDMA_System/VideoDMA_Project/vivado.log
+# Journal file: E:/VideoDMA_System/VideoDMA_Project\vivado.jou
+# Running On: huiyi, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 17023 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at F:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at F:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at F:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at F:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at F:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at F:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at F:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at F:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:user:FDMA:1.0' found within IP repository 'e:/VideoDMA_System'.
+File in use: e:/VideoDMA_System/uisrc/03_ip/uifdma/FDMA.xml
+File ignored: e:/VideoDMA_System/uisrc/03_ip/uifdmadbuf/FDMA.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:user:FDMA_rtl:1.0' found within IP repository 'e:/VideoDMA_System'.
+File in use: e:/VideoDMA_System/uisrc/03_ip/uifdma/FDMA_rtl.xml
+File ignored: e:/VideoDMA_System/uisrc/03_ip/uifdmadbuf/FDMA_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/VideoDMA_System'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'e:/VideoDMA_System' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'e:/VideoDMA_System/VideoDMA_Project'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1589.383 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_uart16550:2.0 - axi_uart16550_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:gmii_to_rgmii:4.1 - gmii_to_rgmii_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Successfully read diagram <design_1> from block design file <E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd>
+delete_bd_objs [get_bd_intf_nets S_AXIS_0_1]
+delete_bd_objs [get_bd_intf_ports S_AXIS_0]
+delete_bd_objs [get_bd_nets s_axis_aresetn_0_1] [get_bd_ports rstn_i]
+delete_bd_objs [get_bd_nets s_axis_aclk_0_1] [get_bd_ports sysclk_i]
+delete_bd_objs [get_bd_nets axis_data_fifo_0_axis_wr_data_count] [get_bd_nets axis_data_fifo_0_axis_rd_data_count] [get_bd_intf_nets axis_data_fifo_0_M_AXIS] [get_bd_cells axis_data_fifo_0]
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_cells axi_dma_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:uiFDMA:3.0 uiFDMA_0
+endgroup
+set_property location {2 419 850} [get_bd_cells uiFDMA_0]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins uiFDMA_0/FDMA_S]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_protocol_converter:2.1 axi_protocol_convert_0
+endgroup
+set_property location {3 818 1062} [get_bd_cells axi_protocol_convert_0]
+connect_bd_intf_net [get_bd_intf_pins axi_protocol_convert_0/S_AXI] [get_bd_intf_pins uiFDMA_0/M_AXI]
+delete_bd_objs [get_bd_intf_nets axi_mem_intercon_M00_AXI]
+validate_bd_design
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/ps7_0_axi_periph/M01_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/uiFDMA_0/M_AXI' to master interface '/axi_protocol_convert_0/M_AXI'. Please either complete or remove this path to resolve.
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/uiFDMA_0/M_AXI_ACLK
+/axi_protocol_convert_0/aclk
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+validate_bd_design
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/ps7_0_axi_periph/M01_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/uiFDMA_0/M_AXI' to master interface '/axi_protocol_convert_0/M_AXI'. Please either complete or remove this path to resolve.
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/uiFDMA_0/M_AXI_ACLK
+/axi_protocol_convert_0/aclk
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+set_property location {3 1178 344} [get_bd_cells axi_protocol_convert_0]
+connect_bd_intf_net [get_bd_intf_pins axi_protocol_convert_0/M_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+connect_bd_intf_net [get_bd_intf_pins system_ila_0/SLOT_1_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+delete_bd_objs [get_bd_nets axi_dma_0_s2mm_introut] [get_bd_nets axi_uart16550_0_ip2intc_irpt] [get_bd_nets xlconcat_0_dout] [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_pins axi_uart16550_0/ip2intc_irpt] [get_bd_pins processing_system7_0/IRQ_F2P]
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100}] [get_bd_cells processing_system7_0]
+endgroup
+set_property name FCLK_CLK0 [get_bd_ports FCLK_CLK1]
+delete_bd_objs [get_bd_intf_nets S01_AXI_1] [get_bd_cells axi_mem_intercon]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_protocol_convert_0/aclk]
+INFO: [BD 5-455] Automation on '/uiFDMA_0/M_AXI_ACLK' will not be run, since it is obsolete due to previously run automations
+endgroup
+startgroup
+set_property -dict [list CONFIG.NUM_MI {1}] [get_bd_cells ps7_0_axi_periph]
+endgroup
+regenerate_bd_layout
+connect_bd_intf_net [get_bd_intf_pins system_ila_0/SLOT_0_AXI] [get_bd_intf_pins uiFDMA_0/M_AXI]
+startgroup
+set_property -dict [list CONFIG.C_MON_TYPE {INTERFACE}] [get_bd_cells system_ila_0]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+assign_bd_address
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/uiFDMA_0/M_AXI' at <0x0000_0000 [ 512M ]>.
+validate_bd_design
+ERROR: [BD 41-237] Bus Interface property DATA_WIDTH does not match between /processing_system7_0/S_AXI_HP0(32) and /axi_protocol_convert_0/M_AXI(128)
+ERROR: [BD 41-237] Bus Interface property DATA_WIDTH does not match between /system_ila_0/SLOT_1_AXI(32) and /axi_protocol_convert_0/M_AXI(128)
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /system_ila_0/SLOT_1_AXI(AXI4) and /axi_protocol_convert_0/M_AXI(AXI3)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /FCLK_CLK0(50000000) and /processing_system7_0/FCLK_CLK0(100000000)
+validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2036.449 ; gain = 80.047
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+set_property -dict [list CONFIG.FREQ_HZ {100000000}] [get_bd_ports FCLK_CLK0]
+regenerate_bd_layout
+validate_bd_design
+ERROR: [BD 41-237] Bus Interface property DATA_WIDTH does not match between /processing_system7_0/S_AXI_HP0(32) and /axi_protocol_convert_0/M_AXI(128)
+ERROR: [BD 41-237] Bus Interface property DATA_WIDTH does not match between /system_ila_0/SLOT_1_AXI(32) and /axi_protocol_convert_0/M_AXI(128)
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /system_ila_0/SLOT_1_AXI(AXI4) and /axi_protocol_convert_0/M_AXI(AXI3)
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+startgroup
+set_property -dict [list CONFIG.M_AXI_DATA_WIDTH {32}] [get_bd_cells uiFDMA_0]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /system_ila_0/SLOT_1_AXI(AXI4) and /axi_protocol_convert_0/M_AXI(AXI3)
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+validate_bd_design
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /system_ila_0/SLOT_1_AXI(AXI4) and /axi_protocol_convert_0/M_AXI(AXI3)
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+disconnect_bd_intf_net [get_bd_intf_net uiFDMA_0_M_AXI] [get_bd_intf_pins system_ila_0/SLOT_0_AXI]
+validate_bd_design
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /system_ila_0/SLOT_1_AXI(AXI4) and /axi_protocol_convert_0/M_AXI(AXI3)
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+undo
+INFO: [Common 17-17] undo 'disconnect_bd_intf_net [get_bd_intf_net uiFDMA_0_M_AXI] [get_bd_intf_pins system_ila_0/SLOT_0_AXI]'
+disconnect_bd_intf_net [get_bd_intf_net axi_protocol_convert_0_M_AXI] [get_bd_intf_pins system_ila_0/SLOT_1_AXI]
+startgroup
+set_property -dict [list CONFIG.C_NUM_MONITOR_SLOTS {1}] [get_bd_cells system_ila_0]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+make_wrapper -files [get_files E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_protocol_convert_0/m_axi_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_protocol_convert_0/m_axi_rid'(1) to pin: '/processing_system7_0/S_AXI_HP0_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_protocol_convert_0/m_axi_bid'(1) to pin: '/processing_system7_0/S_AXI_HP0_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_protocol_convert_0/m_axi_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_protocol_convert_0/m_axi_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_protocol_convert_0/m_axi_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_protocol_convert_0/m_axi_rid'(1) to pin: '/processing_system7_0/S_AXI_HP0_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_protocol_convert_0/m_axi_bid'(1) to pin: '/processing_system7_0/S_AXI_HP0_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_protocol_convert_0/m_axi_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_protocol_convert_0/m_axi_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE6_WIDTH {1} CONFIG.C_PROBE2_WIDTH {35} CONFIG.C_PROBE1_WIDTH {19} CONFIG.C_NUM_OF_PROBES {3}] [get_ips ila_0]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/utils_1/imports/synth_1/VideoDMA_Top.dcp with file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/VideoDMA_Top.dcp
+reset_run ila_0_synth_1
+reset_run design_1_processing_system7_0_0_synth_1
+reset_run design_1_system_ila_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <E:\VideoDMA_System\VideoDMA_Project\VideoDMA_Project.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_protocol_convert_0/m_axi_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_protocol_convert_0/m_axi_rid'(1) to pin: '/processing_system7_0/S_AXI_HP0_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_protocol_convert_0/m_axi_bid'(1) to pin: '/processing_system7_0/S_AXI_HP0_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_protocol_convert_0/m_axi_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_protocol_convert_0/m_axi_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_protocol_convert_0/m_axi_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_protocol_convert_0/m_axi_rid'(1) to pin: '/processing_system7_0/S_AXI_HP0_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_protocol_convert_0/m_axi_bid'(1) to pin: '/processing_system7_0/S_AXI_HP0_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_protocol_convert_0/m_axi_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_protocol_convert_0/m_axi_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uart16550_0 .
+Exporting to file e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0.hwh
+Generated Hardware Definition File e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/design_1_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block uiFDMA_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_protocol_convert_0_0/design_1_axi_protocol_convert_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_protocol_convert_0 .
+Exporting to file e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+[Mon Sep  9 15:46:09 2024] Launched ila_0_synth_1, design_1_processing_system7_0_0_synth_1, design_1_system_ila_0_0_synth_1, design_1_auto_pc_2_synth_1, design_1_axi_uart16550_0_0_synth_1, design_1_rst_ps7_0_50M_2_synth_1, design_1_uiFDMA_0_0_synth_1, design_1_axi_protocol_convert_0_0_synth_1, synth_1...
+Run output will be captured here:
+ila_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/ila_0_synth_1/runme.log
+design_1_processing_system7_0_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_system_ila_0_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_system_ila_0_0_synth_1/runme.log
+design_1_auto_pc_2_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_auto_pc_2_synth_1/runme.log
+design_1_axi_uart16550_0_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_axi_uart16550_0_0_synth_1/runme.log
+design_1_rst_ps7_0_50M_2_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_rst_ps7_0_50M_2_synth_1/runme.log
+design_1_uiFDMA_0_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_uiFDMA_0_0_synth_1/runme.log
+design_1_axi_protocol_convert_0_0_synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_axi_protocol_convert_0_0_synth_1/runme.log
+synth_1: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/synth_1/runme.log
+[Mon Sep  9 15:46:09 2024] Launched impl_1...
+Run output will be captured here: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 2495.266 ; gain = 87.172
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/bd/design_1/design_1.bd]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-2
+Top: VideoDMA_Top
+INFO: [Device 21-403] Loading part xc7z020clg484-2
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_addr is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:62]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_ba is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:63]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_cas_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:64]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_ck_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:65]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_ck_p is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:66]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_cke is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:67]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_cs_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:68]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_dm is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:69]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_dq is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:70]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_dqs_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:71]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_dqs_p is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:72]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_odt is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:73]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_ras_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:74]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_reset_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:75]
+WARNING: [Synth 8-2611] redeclaration of ansi port DDR_we_n is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:76]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_ddr_vrn is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:79]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_ddr_vrp is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:80]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_mio is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:81]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_ps_clk is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:82]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_ps_porb is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:83]
+WARNING: [Synth 8-2611] redeclaration of ansi port FIXED_IO_ps_srstb is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:84]
+WARNING: [Synth 8-2611] redeclaration of ansi port MDIO_PHY_0_mdc is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:86]
+WARNING: [Synth 8-2611] redeclaration of ansi port MDIO_PHY_0_mdio_io is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:87]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_rd is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:88]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_rx_ctl is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:89]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_rxc is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:90]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_td is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:91]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_tx_ctl is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:92]
+WARNING: [Synth 8-2611] redeclaration of ansi port RGMII_0_txc is not allowed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:93]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2955.918 ; gain = 340.613
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'VideoDMA_Top' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_protocol_convert_0_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_axi_protocol_convert_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_protocol_convert_0_0' (2#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_axi_protocol_convert_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uart16550_0_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_axi_uart16550_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uart16550_0_0' (3#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_axi_uart16550_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_gmii_to_rgmii_0_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_gmii_to_rgmii_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_gmii_to_rgmii_0_0' (4#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_gmii_to_rgmii_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'ref_clk_out' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7071] port 'mmcm_locked_out' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7071] port 'gmii_clk_125m_out' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7071] port 'gmii_clk_25m_out' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7071] port 'gmii_clk_2_5m_out' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7071] port 'speed_mode' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7071] port 'link_status' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7071] port 'clock_speed' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7071] port 'duplex_status' of module 'design_1_gmii_to_rgmii_0_0' is unconnected for instance 'gmii_to_rgmii_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+WARNING: [Synth 8-7023] instance 'gmii_to_rgmii_0' of module 'design_1_gmii_to_rgmii_0_0' has 36 connections declared, but only 27 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:507]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (5#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'GPIO_T' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:535]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:535]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:535]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:535]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:535]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 127 connections declared, but only 122 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:535]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_2' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:826]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1131]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (6#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_auto_pc_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1366]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1366]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_2' has 59 connections declared, but only 57 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1366]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (7#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:1131]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_2' (8#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:826]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_50M_2' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_rst_ps7_0_50M_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_50M_2' (9#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_rst_ps7_0_50M_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_50M_2' is unconnected for instance 'rst_ps7_0_50M' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:720]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_50M_2' is unconnected for instance 'rst_ps7_0_50M' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:720]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_50M_2' is unconnected for instance 'rst_ps7_0_50M' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:720]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_50M_2' is unconnected for instance 'rst_ps7_0_50M' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:720]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_2' has 10 connections declared, but only 6 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:720]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:727]
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_0' (10#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_uiFDMA_0_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_uiFDMA_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_uiFDMA_0_0' (11#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_uiFDMA_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M_AXI_WID' of module 'design_1_uiFDMA_0_0' is unconnected for instance 'uiFDMA_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:767]
+WARNING: [Synth 8-7023] instance 'uiFDMA_0' of module 'design_1_uiFDMA_0_0' has 54 connections declared, but only 53 given [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:767]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_0' (12#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (13#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (14#1) [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-689] width (128) of port connection 'FDMA_S_0_fdma_rdata' does not match port width (32) of module 'design_1_wrapper' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:227]
+WARNING: [Synth 8-689] width (128) of port connection 'FDMA_S_0_fdma_wdata' does not match port width (32) of module 'design_1_wrapper' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:234]
+WARNING: [Synth 8-7071] port 'uart_16550_baudoutn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_ctsn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_dcdn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_ddis' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_dsrn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_dtrn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_out1n' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_out2n' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_ri' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_rtsn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_rxrdyn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7071] port 'uart_16550_txrdyn' of module 'design_1_wrapper' is unconnected for instance 'design_1_wrapper_i' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-7023] instance 'design_1_wrapper_i' of module 'design_1_wrapper' has 60 connections declared, but only 48 given [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:260]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (15#1) [E:/VideoDMA_System/VideoDMA_Project/.Xil/Vivado-55960-huiyi/realtime/ila_0_stub.v:6]
+WARNING: [Synth 8-689] width (38) of port connection 'probe2' does not match port width (35) of module 'ila_0' [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:265]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_VideoDMA_Top'. This will prevent further optimization [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:260]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'design_1_wrapper_i'. This will prevent further optimization [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:208]
+INFO: [Synth 8-6155] done synthesizing module 'VideoDMA_Top' (16#1) [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/sources_1/new/VideoDMA_Top.v:23]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_UYSKKA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_UYSKKA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module design_1_ps7_0_axi_periph_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module design_1_ps7_0_axi_periph_2 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3017.434 ; gain = 402.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3035.262 ; gain = 419.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3035.262 ; gain = 419.957
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/ip/ila_0/ila_0.dcp' for cell 'ila_VideoDMA_Top'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_protocol_convert_0_0/design_1_axi_protocol_convert_0_0.dcp' for cell 'design_1_wrapper_i/design_1_i/axi_protocol_convert_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0.dcp' for cell 'design_1_wrapper_i/design_1_i/axi_uart16550_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/design_1_gmii_to_rgmii_0_0.dcp' for cell 'design_1_wrapper_i/design_1_i/gmii_to_rgmii_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_wrapper_i/design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2.dcp' for cell 'design_1_wrapper_i/design_1_i/rst_ps7_0_50M'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.dcp' for cell 'design_1_wrapper_i/design_1_i/system_ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_uiFDMA_0_0/design_1_uiFDMA_0_0.dcp' for cell 'design_1_wrapper_i/design_1_i/uiFDMA_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0.dcp' for cell 'design_1_wrapper_i/design_1_i/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2.dcp' for cell 'design_1_wrapper_i/design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.176 . Memory (MB): peak = 3061.789 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 697 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_board.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_board.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_uart16550_0/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_uart16550_0/U0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_uart16550_0/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_uart16550_0/U0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib/inst'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/gmii_to_rgmii_0/U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/gmii_to_rgmii_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_VideoDMA_Top/inst'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_VideoDMA_Top/inst'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sysclk_i'. [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'sysclk_i'. [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc:6]
+Finished Parsing XDC File [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.srcs/constrs_1/new/VideoDMA.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/VideoDMA_Top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/gmii_to_rgmii_0/U0'
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'design_1_gmii_to_rgmii_0_0_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:7]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:20]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:21]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:24]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:32]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:33]
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/gmii_to_rgmii_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VideoDMA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VideoDMA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 3 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3203.695 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 296 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 292 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3380.062 ; gain = 764.758
+56 Infos, 85 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 3380.062 ; gain = 869.117
+write_hw_platform -fixed -include_bit -force -file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Top.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Top.xsa ...
+INFO: [Vivado 12-12464] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Top.xsa
+write_hw_platform: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3507.211 ; gain = 127.148
+INFO: [Hsi 55-2053] elapsed time for repository (F:/Xilinx/Vivado/2021.2/data/embeddedsw) loading 0 seconds
+close_design
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.2.0
+  ****** Build date   : Sep 28 2021-05:44:20
+    **** Build number : 2021.2.1632779060
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3596.742 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/13724327082d01
+open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:26 . Memory (MB): peak = 4892.430 ; gain = 1295.688
+set_property PROGRAM.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/impl_1/VideoDMA_Top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 4965.965 ; gain = 38.566
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]]
+WARNING: Simulation object AR_Channel_(i1:s0)_(S01_AXI_1) was not found in the design.
+WARNING: Simulation object AW_Channel_(i1:s0)_(S01_AXI_1) was not found in the design.
+WARNING: Simulation object B_Channel_(i1:s0)_(S01_AXI_1) was not found in the design.
+WARNING: Simulation object Interface_(i1:s0)_(S01_AXI_1) was not found in the design.
+WARNING: Simulation object R_Channel_(i1:s0)_(S01_AXI_1) was not found in the design.
+WARNING: Simulation object W_Channel_(i1:s0)_(S01_AXI_1) was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arvalid was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arready was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_araddr was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arlen was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arsize was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arcache was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_arprot was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rvalid was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rready was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rlast was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_rdata was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awvalid was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awready was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awaddr was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awlen was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awsize was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awcache was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_awprot was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wvalid was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wready was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wlast was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wdata was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_wstrb was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_bvalid was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_bready was not found in the design.
+WARNING: Simulation object design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_1_axi_bresp was not found in the design.
+Processing Interface uiFDMA_0_M_AXI_ila1_slot0
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+WARNING: Simulation object S_AXIS_tdata was not found in the design.
+WARNING: Simulation object S_AXIS_tkeep was not found in the design.
+WARNING: Simulation object S_AXIS_tlast was not found in the design.
+WARNING: Simulation object S_AXIS_tready was not found in the design.
+WARNING: Simulation object S_AXIS_tvalid was not found in the design.
+WARNING: Simulation object state was not found in the design.
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {fdma_rbusy} {fdma_rdata} {fdma_rvalid} {fdma_wareq} {fdma_wbusy} {fdma_wdata} {fdma_wdata_1} {fdma_wvalid} {T_S} {test_error} }
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes trans_start_i -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Sep-09 16:48:01
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_VideoDMA_Top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2024-Sep-09 16:48:50
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-09 16:49:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_wrapper_i/design_1_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Sep-09 16:49:36
+Processed interface uiFDMA_0_M_AXI_ila1_slot0
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wdata} }
+set_property NAME.CUSTOM {slot_0 : ps7_0_axi_periph_M00_AXI : WDATA} [get_hw_probes design_1_wrapper_i/design_1_i/system_ila_0/inst/net_slot_0_axi_wdata] 
+save_wave_config {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  9 18:02:25 2024...

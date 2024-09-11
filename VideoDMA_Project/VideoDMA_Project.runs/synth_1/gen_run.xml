@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-2" LaunchTime="1725867967" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/VideoDMA_Top.dcp">
+  <File Type="PA-TCL" Name="VideoDMA_Top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="VideoDMA_Top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="VideoDMA_Top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="VideoDMA_Top.vds"/>
+  <File Type="RDS-UTIL" Name="VideoDMA_Top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="VideoDMA_Top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="VideoDMA_Top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="VideoDMA_Top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="VideoDMA_Top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/design_1/hdl/design_1_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/VideoDMA_Top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="VideoDMA_Top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/VideoDMA.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/VideoDMA_Top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_uiFDMA_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_auto_pc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_system_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_rst_ps7_0_50M_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_gmii_to_rgmii_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_util_vector_logic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_uart16550_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_protocol_convert_0_0"/>
+</GenRun>

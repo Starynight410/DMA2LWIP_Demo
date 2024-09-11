@@ -1,0 +1,431 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri Sep  6 09:35:51 2024
+# Process ID: 42804
+# Current directory: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_gmii_to_rgmii_0_0_synth_1
+# Command line: vivado.exe -log design_1_gmii_to_rgmii_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_gmii_to_rgmii_0_0.tcl
+# Log file: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_gmii_to_rgmii_0_0_synth_1/design_1_gmii_to_rgmii_0_0.vds
+# Journal file: E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_gmii_to_rgmii_0_0_synth_1\vivado.jou
+# Running On: huiyi, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 17023 MB
+#-----------------------------------------------------------
+source design_1_gmii_to_rgmii_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:user:FDMA:1.0' found within IP repository 'e:/VideoDMA_System'.
+File in use: e:/VideoDMA_System/uisrc/03_ip/uifdma/FDMA.xml
+File ignored: e:/VideoDMA_System/uisrc/03_ip/uifdmadbuf/FDMA.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:user:FDMA_rtl:1.0' found within IP repository 'e:/VideoDMA_System'.
+File in use: e:/VideoDMA_System/uisrc/03_ip/uifdma/FDMA_rtl.xml
+File ignored: e:/VideoDMA_System/uisrc/03_ip/uifdmadbuf/FDMA_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/VideoDMA_System'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'e:/VideoDMA_System' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_gmii_to_rgmii_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top design_1_gmii_to_rgmii_0_0 -part xc7z020clg484-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21660
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1567.164 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_gmii_to_rgmii_0_0' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0.vhd:128]
+INFO: [Synth 8-3491] module 'design_1_gmii_to_rgmii_0_0_support' declared at 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_support.vhd:65' bound to instance 'U0' of component 'design_1_gmii_to_rgmii_0_0_support' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'design_1_gmii_to_rgmii_0_0_support' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_support.vhd:115]
+INFO: [Synth 8-3491] module 'design_1_gmii_to_rgmii_0_0_clocking' declared at 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocking.vhd:62' bound to instance 'i_design_1_gmii_to_rgmii_0_0_clocking' of component 'design_1_gmii_to_rgmii_0_0_clocking' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_support.vhd:205]
+INFO: [Synth 8-638] synthesizing module 'design_1_gmii_to_rgmii_0_0_clocking' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocking.vhd:75]
+INFO: [Synth 8-113] binding component instance 'i_bufg_clk_in' to cell 'BUFG' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocking.vhd:92]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 5.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 5.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 8.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 100 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocking.vhd:96]
+	Parameter BUFR_DIVIDE bound to: 4 - type: string 
+INFO: [Synth 8-113] binding component instance 'clk10_div_buf' to cell 'BUFR' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocking.vhd:164]
+INFO: [Synth 8-256] done synthesizing module 'design_1_gmii_to_rgmii_0_0_clocking' (1#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocking.vhd:75]
+INFO: [Synth 8-3491] module 'design_1_gmii_to_rgmii_0_0_resets' declared at 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_resets.vhd:61' bound to instance 'i_design_1_gmii_to_rgmii_0_0_resets' of component 'design_1_gmii_to_rgmii_0_0_resets' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_support.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'design_1_gmii_to_rgmii_0_0_resets' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_resets.vhd:69]
+INFO: [Synth 8-3491] module 'design_1_gmii_to_rgmii_0_0_reset_sync' declared at 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_reset_sync.vhd:66' bound to instance 'idelayctrl_reset_gen' of component 'design_1_gmii_to_rgmii_0_0_reset_sync' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_resets.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'design_1_gmii_to_rgmii_0_0_reset_sync' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_reset_sync.vhd:82]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'reset_sync1' to cell 'FDP' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_reset_sync.vhd:111]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'reset_sync2' to cell 'FDP' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_reset_sync.vhd:122]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'reset_sync3' to cell 'FDP' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_reset_sync.vhd:133]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'reset_sync4' to cell 'FDP' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_reset_sync.vhd:144]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'reset_sync5' to cell 'FDP' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_reset_sync.vhd:155]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'reset_sync6' to cell 'FDP' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_reset_sync.vhd:166]
+INFO: [Synth 8-256] done synthesizing module 'design_1_gmii_to_rgmii_0_0_reset_sync' (2#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_reset_sync.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'design_1_gmii_to_rgmii_0_0_resets' (3#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_resets.vhd:69]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'i_design_1_gmii_to_rgmii_0_0_idelayctrl' to cell 'IDELAYCTRL' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_support.vhd:233]
+INFO: [Synth 8-3491] module 'design_1_gmii_to_rgmii_0_0_block' declared at 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:87' bound to instance 'i_gmii_to_rgmii_block' of component 'design_1_gmii_to_rgmii_0_0_block' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_support.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'design_1_gmii_to_rgmii_0_0_block' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:136]
+INFO: [Synth 8-113] binding component instance 'i_bufgmux_gmii_clk_25m_2_5m' to cell 'BUFGMUX' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:210]
+INFO: [Synth 8-113] binding component instance 'i_bufgmux_gmii_clk' to cell 'BUFGMUX' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:218]
+INFO: [Synth 8-113] binding component instance 'rgmii_txc_obuf_i' to cell 'OBUF' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:228]
+INFO: [Synth 8-113] binding component instance 'rgmii_tx_ctl_obuf_i' to cell 'OBUF' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:234]
+INFO: [Synth 8-113] binding component instance 'rgmii_txd_obuf_i' to cell 'OBUF' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:241]
+INFO: [Synth 8-113] binding component instance 'rgmii_txd_obuf_i' to cell 'OBUF' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:241]
+INFO: [Synth 8-113] binding component instance 'rgmii_txd_obuf_i' to cell 'OBUF' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:241]
+INFO: [Synth 8-113] binding component instance 'rgmii_txd_obuf_i' to cell 'OBUF' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:241]
+INFO: [Synth 8-113] binding component instance 'rgmii_rxc_ibuf_i' to cell 'IBUF' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:248]
+INFO: [Synth 8-113] binding component instance 'rgmii_rx_ctl_ibuf_i' to cell 'IBUF' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:254]
+INFO: [Synth 8-113] binding component instance 'rgmii_rxd_ibuf_i' to cell 'IBUF' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:261]
+INFO: [Synth 8-113] binding component instance 'rgmii_rxd_ibuf_i' to cell 'IBUF' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:261]
+INFO: [Synth 8-113] binding component instance 'rgmii_rxd_ibuf_i' to cell 'IBUF' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:261]
+INFO: [Synth 8-113] binding component instance 'rgmii_rxd_ibuf_i' to cell 'IBUF' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:261]
+	Parameter C_RGMII_TXC_SKEW_EN bound to: 0 - type: integer 
+	Parameter C_RGMII_TXC_ODELAY_VAL bound to: 0 - type: integer 
+	Parameter C_IDELAY_DELAY_VAL bound to: 5'b00000 
+	Parameter C_ODELAY_DELAY_VAL bound to: 5'b11111 
+	Parameter C_VERSAL_SIM_DEVICE bound to: UNKNOWN_DEVICE - type: string 
+	Parameter C_DEVICE_TYPE bound to: 0 - type: integer 
+	Parameter C_PHYADDR bound to: 5'b01000 
+INFO: [Synth 8-3491] module 'gmii_to_rgmii_v4_1_3' declared at 'e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ipshared/8aab/hdl/gmii_to_rgmii_v4_1_vhsyn_rfs.vhd:3307' bound to instance 'design_1_gmii_to_rgmii_0_0_core' of component 'gmii_to_rgmii_v4_1_3' [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:269]
+INFO: [Synth 8-256] done synthesizing module 'design_1_gmii_to_rgmii_0_0_block' (12#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_block.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'design_1_gmii_to_rgmii_0_0_support' (13#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_support.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'design_1_gmii_to_rgmii_0_0' (14#1) [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0.vhd:128]
+WARNING: [Synth 8-7129] Port enable in module reset_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port speed_selection[0] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iodelay_clk in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_load in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvaluein[4] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvaluein[3] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvaluein[2] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvaluein[1] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port idelay_cntvaluein[0] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_load in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvaluein[4] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvaluein[3] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvaluein[2] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvaluein[1] in module gmii_to_rgmii_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port odelay_cntvaluein[0] in module gmii_to_rgmii_core is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1567.164 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1567.164 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1567.164 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1567.164 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 98 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_gmii_to_rgmii_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_gmii_to_rgmii_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_gmii_to_rgmii_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_gmii_to_rgmii_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc] for cell 'U0'
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'design_1_gmii_to_rgmii_0_0_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:7]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:20]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:21]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:24]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:32]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc:33]
+Finished Parsing XDC File [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.gen/sources_1/bd/design_1/ip/design_1_gmii_to_rgmii_0_0/synth/design_1_gmii_to_rgmii_0_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_gmii_to_rgmii_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_gmii_to_rgmii_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1654.355 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 85 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 2 instances
+  FD => FDRE: 30 instances
+  FDP => FDPE: 48 instances
+  IODELAYE1 => IDELAYE2: 5 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1654.355 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 1654.355 ; gain = 87.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 1654.355 ; gain = 87.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_gmii_to_rgmii_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 1654.355 ; gain = 87.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'idelay_reset_cnt_reg' in module 'design_1_gmii_to_rgmii_0_0_resets'
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'MDIO_INTERFACE'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE7 |                  000000000000001 |                             0000
+                 iSTATE6 |                  000000000000010 |                             0001
+                 iSTATE2 |                  000000000000100 |                             0010
+                  iSTATE |                  000000000001000 |                             0011
+                 iSTATE0 |                  000000000010000 |                             0100
+                iSTATE13 |                  000000000100000 |                             0101
+                iSTATE11 |                  000000001000000 |                             0110
+                 iSTATE9 |                  000000010000000 |                             0111
+                iSTATE10 |                  000000100000000 |                             1000
+                 iSTATE8 |                  000001000000000 |                             1001
+                 iSTATE5 |                  000010000000000 |                             1010
+                 iSTATE3 |                  000100000000000 |                             1011
+                 iSTATE4 |                  001000000000000 |                             1100
+                 iSTATE1 |                  010000000000000 |                             1101
+                iSTATE12 |                  100000000000000 |                             1110
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'idelay_reset_cnt_reg' using encoding 'one-hot' in module 'design_1_gmii_to_rgmii_0_0_resets'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        idle_or_preamble |                      00000010000 |                             0000
+          wait_for_start |                      00001000000 |                             0001
+                opcode_1 |                      00000001000 |                             0010
+                opcode_2 |                      00000000001 |                             0011
+                ld_phyad |                      00000000010 |                             0100
+                ld_regad |                      00000000100 |                             0101
+                    ta_1 |                      10000000000 |                             0110
+                    ta_2 |                      00010000000 |                             0111
+                  data_1 |                      00100000000 |                             1000
+                  data_2 |                      01000000000 |                             1001
+                  data_3 |                      00000100000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'MDIO_INTERFACE'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:27 . Memory (MB): peak = 1654.355 ; gain = 87.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 38    
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 3     
+	  15 Input   15 Bit        Muxes := 1     
+	  11 Input   11 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 5     
+	  15 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 10    
+	   4 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port enable in module reset_sync is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (i_design_1_gmii_to_rgmii_0_0_resets/FSM_onehot_idelay_reset_cnt_reg[14]) is unused and will be removed from module design_1_gmii_to_rgmii_0_0_support.
+WARNING: [Synth 8-3332] Sequential element (reset_sync1) is unused and will be removed from module reset_sync__4.
+WARNING: [Synth 8-3332] Sequential element (reset_sync2) is unused and will be removed from module reset_sync__4.
+WARNING: [Synth 8-3332] Sequential element (reset_sync3) is unused and will be removed from module reset_sync__4.
+WARNING: [Synth 8-3332] Sequential element (reset_sync4) is unused and will be removed from module reset_sync__4.
+WARNING: [Synth 8-3332] Sequential element (reset_sync5) is unused and will be removed from module reset_sync__4.
+WARNING: [Synth 8-3332] Sequential element (reset_sync6) is unused and will be removed from module reset_sync__4.
+WARNING: [Synth 8-3332] Sequential element (reset_sync1) is unused and will be removed from module reset_sync__6.
+WARNING: [Synth 8-3332] Sequential element (reset_sync2) is unused and will be removed from module reset_sync__6.
+WARNING: [Synth 8-3332] Sequential element (reset_sync3) is unused and will be removed from module reset_sync__6.
+WARNING: [Synth 8-3332] Sequential element (reset_sync4) is unused and will be removed from module reset_sync__6.
+WARNING: [Synth 8-3332] Sequential element (reset_sync5) is unused and will be removed from module reset_sync__6.
+WARNING: [Synth 8-3332] Sequential element (reset_sync6) is unused and will be removed from module reset_sync__6.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1654.355 ; gain = 87.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:35 . Memory (MB): peak = 1654.355 ; gain = 87.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:35 . Memory (MB): peak = 1654.355 ; gain = 87.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1654.355 ; gain = 87.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 1654.355 ; gain = 87.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 1654.355 ; gain = 87.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 1654.355 ; gain = 87.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 1654.355 ; gain = 87.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 1654.355 ; gain = 87.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 1654.355 ; gain = 87.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |BUFGMUX    |     2|
+|3     |BUFIO      |     1|
+|4     |BUFR       |     1|
+|5     |IDDR       |     5|
+|6     |IDELAYCTRL |     1|
+|7     |IODELAYE1  |     5|
+|8     |LUT2       |    19|
+|9     |LUT3       |    47|
+|10    |LUT4       |    13|
+|11    |LUT5       |    30|
+|12    |LUT6       |    58|
+|13    |MMCME2_ADV |     1|
+|14    |MUXF7      |     8|
+|15    |MUXF8      |     4|
+|16    |ODDR       |     6|
+|17    |FD         |    30|
+|18    |FDP        |    36|
+|19    |FDRE       |   154|
+|20    |FDSE       |    26|
+|21    |IBUF       |     6|
+|22    |OBUF       |     6|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 1654.355 ; gain = 87.191
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 1654.355 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 1654.355 ; gain = 87.191
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1654.355 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 98 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1654.355 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 73 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 2 instances
+  FD => FDRE: 30 instances
+  FDP => FDPE: 36 instances
+  IODELAYE1 => IDELAYE2: 5 instances
+
+Synth Design complete, checksum: 28eb5cb8
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:44 . Memory (MB): peak = 1654.355 ; gain = 87.191
+INFO: [Common 17-1381] The checkpoint 'E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_gmii_to_rgmii_0_0_synth_1/design_1_gmii_to_rgmii_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_gmii_to_rgmii_0_0, cache-ID = 7f69a19176b9f402
+INFO: [Coretcl 2-1174] Renamed 16 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/VideoDMA_System/VideoDMA_Project/VideoDMA_Project.runs/design_1_gmii_to_rgmii_0_0_synth_1/design_1_gmii_to_rgmii_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_gmii_to_rgmii_0_0_utilization_synth.rpt -pb design_1_gmii_to_rgmii_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep  6 09:36:46 2024...
