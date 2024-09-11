@@ -28,3 +28,5 @@ SingleSerialPort：Uart控制上位机、VideoDMA_Project：ZYNQ系统（另需�
 通过网口助手简单做下接收测试，网口接收端接收单次触发的数据如下：
 
 ![image](./image/网口接收端.png)
+
+结果看到，接收存在少量错误，后续可添加数据缓存操作减少时序错误导致的DDR写入错误。
