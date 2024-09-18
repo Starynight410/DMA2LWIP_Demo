@@ -72,7 +72,7 @@
 #define EMIOLED1    		54
 #define EMIOTRIGGER    		55
 #define DDR_BASE_ADDR 		0x00000000
-#define DATA_SIZE 			1024  // ¶ÁÈ¡µÄÊı¾İ´óĞ¡
+#define DATA_SIZE 			1024  // è¯»å–çš„æ•°æ®å¤§å°
 
 /************************** Function Prototypes ******************************/
 
@@ -296,10 +296,10 @@ int main()
 
 }
 
-u8 order_buf[18]={0};		//±£´æÃüÁî
-u8 order_cnt=0;				//Êı×é¼ÆÊıÆ÷
-u8 cfg_buf[4]={0};			//SPIÅäÖÃ²ÎÊı
-u8 cfg_temp[3]={0};			//±£´æÃ¿¸ö²ÎÊıÓÃÓÚ×ª»»Ê®½øÖÆ
+u8 order_buf[18]={0};		//ä¿å­˜å‘½ä»¤
+u8 order_cnt=0;				//æ•°ç»„è®¡æ•°å™¨
+u8 cfg_buf[4]={0};			//SPIé…ç½®å‚æ•°
+u8 cfg_temp[3]={0};			//ä¿å­˜æ¯ä¸ªå‚æ•°ç”¨äºè½¬æ¢åè¿›åˆ¶
 
 int UartNs550MultiFunction(u16 DeviceId)
 {
@@ -325,17 +325,17 @@ int UartNs550MultiFunction(u16 DeviceId)
 	XGpioPs_WritePin(&gXGpioTrigger, EMIOTRIGGER, 0);
 
 	// Initialize the UartNs550 device so that it is ready to use
-	//²¨ÌØÂÊ19200
+	//æ³¢ç‰¹ç‡19200
 	Status = XUartNs550_Initialize(&UartNs550, DeviceId);
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
 	xil_printf("Initiate Uart and LED succeed\r\n");
-	XGpioPs_WritePin(&gXGpioLed1, EMIOLED1, 1);		//ÊÖ¶¯µãµÆ
+	XGpioPs_WritePin(&gXGpioLed1, EMIOLED1, 1);		//æ‰‹åŠ¨ç‚¹ç¯
 
 	// DDR
 	u8 buffer[DATA_SIZE];
-	u32 ddr_addr = DDR_BASE_ADDR;  // DDRÄÚ´æµÄ»ùµØÖ·
+	u32 ddr_addr = DDR_BASE_ADDR;  // DDRå†…å­˜çš„åŸºåœ°å€
 
 	while(1)
 	{
@@ -355,7 +355,7 @@ int UartNs550MultiFunction(u16 DeviceId)
 		{
 			rec_cnt = 0;
 
-			if(order_buf[2]=='w')			// ²Ù×÷µÆÃüÁî
+			if(order_buf[2]=='w')			// æ“ä½œç¯å‘½ä»¤
 			{
 				if(order_buf[4]=='1')
 				{
@@ -363,7 +363,7 @@ int UartNs550MultiFunction(u16 DeviceId)
 				}
 			}
 
-			else if(order_buf[2]=='t')		// Ğ´Èë²âÊÔÊı¾İ
+			else if(order_buf[2]=='t')		// å†™å…¥æµ‹è¯•æ•°æ®
 			{
 				XGpioPs_WritePin(&gXGpioTrigger, EMIOTRIGGER, 1);
 				sleep(0.01);
@@ -373,19 +373,20 @@ int UartNs550MultiFunction(u16 DeviceId)
 //				ddr_addr = DDR_BASE_ADDR;
 			}
 
-			else if(order_buf[2]=='q')		// È¡DDRÊı¾İ²¢·¢ËÍÖÁÉÏÎ»»ú£¬ÉÏÎ»»úÊÖ¶¯´¥·¢
+			else if(order_buf[2]=='q')		// å–DDRæ•°æ®å¹¶å‘é€è‡³ä¸Šä½æœºï¼Œä¸Šä½æœºæ‰‹åŠ¨è§¦å‘
 			{
-				// ´ÓDDRÄÚ´æ¶ÁÈ¡Êı¾İ
+				// ä»DDRå†…å­˜è¯»å–æ•°æ®
+				Xil_DCacheFlushRange((INTPTR)ddr_addr, DATA_SIZE);
 				for (int i = 0; i < DATA_SIZE; i++) {
 					buffer[i] = *((volatile u8 *)(ddr_addr + i));
 				}
 
-				// Ñ¡ÔñÍ¨¹ı´®¿Ú»òÍø¿Ú·¢ËÍ
+				// é€‰æ‹©é€šè¿‡ä¸²å£æˆ–ç½‘å£å‘é€
 				if(order_buf[4]=='u') {
 					XUartNs550_Send(&UartNs550, buffer, DATA_SIZE);
 				}
 				else if(order_buf[4]=='e') {
-					process_TriggerIntr(buffer, DATA_SIZE);		// Íø¿Ú·¢ËÍ
+					process_TriggerIntr(buffer, DATA_SIZE);		// ç½‘å£å‘é€
 				}
 			}
 
@@ -397,8 +398,8 @@ int UartNs550MultiFunction(u16 DeviceId)
 }
 
 
-//¶ÁÈ¡´®¿Ú½ÓÊÕÊı¾İ£¬Ã¿Ò»¸öÖµ¶¼±£´æµ½È«¾ÖÊı×éorder_bufÖĞ
-//½ÓÊÕÍêÒ»ÌõÃüÁîºó·µ»Ø1£¬ÆäËû·µ»Ø0
+//è¯»å–ä¸²å£æ¥æ”¶æ•°æ®ï¼Œæ¯ä¸€ä¸ªå€¼éƒ½ä¿å­˜åˆ°å…¨å±€æ•°ç»„order_bufä¸­
+//æ¥æ”¶å®Œä¸€æ¡å‘½ä»¤åè¿”å›1ï¼Œå…¶ä»–è¿”å›0
 u8 order_rec()
 {
 	u8 rec_buf[1]={0};
@@ -407,7 +408,7 @@ u8 order_rec()
 	if(rec_mark!=0)
 	{
 		order_buf[order_cnt]=rec_buf[0];
-		if(order_cnt==17)	//¶¨³¤Ö¸Áî
+		if(order_cnt==17)	//å®šé•¿æŒ‡ä»¤
 		{
 			order_cnt=0;
 			return 1;
@@ -421,7 +422,7 @@ u8 order_rec()
 	return 0;
 }
 
-//Íø¿Ú·¢Êı´¦Àí
+//ç½‘å£å‘æ•°å¤„ç†
 int process_TriggerIntr(u8* data_bufferPtr, int FileSize)
 {
 	err_t err;
